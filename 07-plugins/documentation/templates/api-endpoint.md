@@ -1,32 +1,32 @@
 # [METHOD] /api/v1/[endpoint]
 
-## Description
-Brief explanation of what this endpoint does.
+## 描述
+简要说明此端点的功能。
 
-## Authentication
-Required authentication method (e.g., Bearer token).
+## 认证
+所需的认证方式（例如 Bearer token）。
 
-## Parameters
+## 参数
 
-### Path Parameters
-| Name | Type | Required | Description |
-|------|------|----------|-------------|
-| id | string | Yes | Resource ID |
+### 路径参数
+| 名称 | 类型 | 必需 | 描述 |
+|------|------|------|------|
+| id | string | 是 | 资源 ID |
 
-### Query Parameters
-| Name | Type | Required | Description |
-|------|------|----------|-------------|
-| page | integer | No | Page number (default: 1) |
-| limit | integer | No | Items per page (default: 20) |
+### 查询参数
+| 名称 | 类型 | 必需 | 描述 |
+|------|------|------|------|
+| page | integer | 否 | 页码（默认：1） |
+| limit | integer | 否 | 每页条目数（默认：20） |
 
-### Request Body
+### 请求体
 ```json
 {
   "field": "value"
 }
 ```
 
-## Responses
+## 响应
 
 ### 200 OK
 ```json
@@ -61,7 +61,7 @@ Required authentication method (e.g., Bearer token).
 }
 ```
 
-## Examples
+## 示例
 
 ### cURL
 ```bash
@@ -92,10 +92,10 @@ response = requests.get(
 data = response.json()
 ```
 
-## Rate Limits
-- 1000 requests per hour for authenticated users
-- 100 requests per hour for public endpoints
+## 速率限制
+- 认证用户每小时 1000 次请求
+- 公共端点每小时 100 次请求
 
-## Related Endpoints
+## 相关端点
 - [GET /api/v1/related](#)
 - [POST /api/v1/related](#)

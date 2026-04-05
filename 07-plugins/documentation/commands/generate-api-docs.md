@@ -3,13 +3,13 @@ name: Generate API Documentation
 description: Generate comprehensive API documentation from source code
 ---
 
-# API Documentation Generator
+# API 文档生成器
 
-Generate complete API documentation:
+生成完整的 API 文档：
 
-1. Scan API endpoints
-2. Extract function signatures and JSDoc
-3. Organize by module/endpoint
-4. Create markdown with examples
-5. Include request/response schemas
-6. Add error documentation
+1. 扫描 API 端点
+2. 提取函数签名和 JSDoc
+3. 按模块/端点整理
+4. 创建包含示例的 Markdown 文档
+5. 包含请求/响应模式
+6. 添加错误文档

@@ -1,47 +1,47 @@
-# Code Review Checklist
+# 代码审查清单
 
-## Security Checklist
-- [ ] No hardcoded credentials or secrets
-- [ ] Input validation on all user inputs
-- [ ] SQL injection prevention (parameterized queries)
-- [ ] CSRF protection on state-changing operations
-- [ ] XSS prevention with proper escaping
-- [ ] Authentication checks on protected endpoints
-- [ ] Authorization checks on resources
-- [ ] Secure password hashing (bcrypt, argon2)
-- [ ] No sensitive data in logs
-- [ ] HTTPS enforced
+## 安全清单
+- [ ] 无硬编码的凭据或密钥
+- [ ] 所有用户输入都有输入验证
+- [ ] SQL 注入防护（参数化查询）
+- [ ] 状态变更操作的 CSRF 防护
+- [ ] 正确转义的 XSS 防护
+- [ ] 受保护端点的认证检查
+- [ ] 资源的授权检查
+- [ ] 安全的密码哈希（bcrypt、argon2）
+- [ ] 日志中无敏感数据
+- [ ] 强制 HTTPS
 
-## Performance Checklist
-- [ ] No N+1 queries
-- [ ] Appropriate use of indexes
-- [ ] Caching implemented where beneficial
-- [ ] No blocking operations on main thread
-- [ ] Async/await used correctly
-- [ ] Large datasets paginated
-- [ ] Database connections pooled
-- [ ] Regular expressions optimized
-- [ ] No unnecessary object creation
-- [ ] Memory leaks prevented
+## 性能清单
+- [ ] 无 N+1 查询
+- [ ] 适当使用索引
+- [ ] 在有益的地方实现缓存
+- [ ] 主线程无阻塞操作
+- [ ] 正确使用 async/await
+- [ ] 大数据集分页
+- [ ] 数据库连接池化
+- [ ] 正则表达式已优化
+- [ ] 无不必要的对象创建
+- [ ] 防止内存泄漏
 
-## Quality Checklist
-- [ ] Functions < 50 lines
-- [ ] Clear variable naming
-- [ ] No duplicate code
-- [ ] Proper error handling
-- [ ] Comments explain WHY, not WHAT
-- [ ] No console.logs in production
-- [ ] Type checking (TypeScript/JSDoc)
-- [ ] SOLID principles followed
-- [ ] Design patterns applied correctly
-- [ ] Self-documenting code
+## 质量清单
+- [ ] 函数 < 50 行
+- [ ] 变量命名清晰
+- [ ] 无重复代码
+- [ ] 正确的错误处理
+- [ ] 注释解释"为什么"而非"做了什么"
+- [ ] 生产环境无 console.log
+- [ ] 类型检查（TypeScript/JSDoc）
+- [ ] 遵循 SOLID 原则
+- [ ] 正确应用设计模式
+- [ ] 代码具有自文档性
 
-## Testing Checklist
-- [ ] Unit tests written
-- [ ] Edge cases covered
-- [ ] Error scenarios tested
-- [ ] Integration tests present
-- [ ] Coverage > 80%
-- [ ] No flaky tests
-- [ ] Mock external dependencies
-- [ ] Clear test names
+## 测试清单
+- [ ] 编写了单元测试
+- [ ] 覆盖了边界情况
+- [ ] 测试了错误场景
+- [ ] 存在集成测试
+- [ ] 覆盖率 > 80%
+- [ ] 无不稳定测试
+- [ ] 模拟了外部依赖
+- [ ] 测试名称清晰

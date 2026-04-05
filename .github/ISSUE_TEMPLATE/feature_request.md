@@ -7,40 +7,40 @@ assignees: ''
 
 ---
 
-## Description
-Describe the feature or improvement you'd like to see.
+## 描述
+描述你希望看到的功能或改进。
 
-## Problem It Solves
-What problem or gap does this address?
+## 解决的问题
+这解决了什么问题或填补了什么空白？
 
-Examples:
-- There's no example of X feature
-- The current documentation for Y is unclear
-- We need a guide for Z use case
-- The structure could be improved by...
+示例：
+- 没有 X 功能的示例
+- Y 的当前文档不够清晰
+- 我们需要 Z 用例的指南
+- 结构可以通过...来改进
 
-## Use Case
-When and how would this be used? Include real-world scenarios.
+## 使用场景
+何时以及如何使用？包含实际应用场景。
 
-## Proposed Solution
-How should this be implemented or documented?
+## 建议的解决方案
+应该如何实现或记录？
 
-## Example
-If applicable, provide an example of what you envision:
+## 示例
+如适用，提供你设想的示例：
 ```
-[Insert example here]
+[在此插入示例]
 ```
 
-## Related Examples
-Link any existing related examples or guides:
-- Existing Guide: <!-- Add link here -->
-- Feature: (e.g., Skills, Hooks, Subagents)
+## 相关示例
+链接任何现有的相关示例或指南：
+- 现有指南：<!-- 在此添加链接 -->
+- 功能：（如技能（Skill）、钩子（Hook）、子代理（Subagent））
 
-## Additional Context
-Any other information that might be helpful?
+## 补充信息
+任何可能有帮助的其他信息？
 
-## Acceptance Criteria
-How would you know this feature is complete?
-- [ ] Criterion 1
-- [ ] Criterion 2
-- [ ] Criterion 3
+## 验收标准
+如何判断此功能已完成？
+- [ ] 标准 1
+- [ ] 标准 2
+- [ ] 标准 3

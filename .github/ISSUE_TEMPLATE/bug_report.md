@@ -7,37 +7,37 @@ assignees: ''
 
 ---
 
-## Description
-Brief description of the issue.
+## 描述
+问题的简要描述。
 
-## Steps to Reproduce
-1. Step 1
-2. Step 2
-3. Step 3
+## 复现步骤
+1. 步骤 1
+2. 步骤 2
+3. 步骤 3
 
-## Expected Behavior
-What should happen?
+## 预期行为
+应该发生什么？
 
-## Actual Behavior
-What actually happened?
+## 实际行为
+实际发生了什么？
 
-## Environment
-- **Claude Code Version**: (e.g., 1.0.5)
-- **Operating System**: (e.g., macOS 14.1, Ubuntu 22.04, Windows 11)
-- **Python Version**: (if relevant, e.g., 3.11)
-- **Affected Component**: (e.g., 01-slash-commands, 03-skills, etc.)
+## 环境
+- **Claude Code 版本**：（如 1.0.5）
+- **操作系统**：（如 macOS 14.1、Ubuntu 22.04、Windows 11）
+- **Python 版本**：（如相关，如 3.11）
+- **受影响组件**：（如 01-slash-commands、03-skills 等）
 
-## Example Code
-If applicable, provide the example code that's not working:
+## 示例代码
+如适用，提供无法正常工作的示例代码：
 ```
-[Insert code here]
+[在此插入代码]
 ```
 
-## Screenshots
-If applicable, add screenshots showing the issue.
+## 截图
+如适用，添加显示问题的截图。
 
-## Additional Context
-Any other context that might help us understand the issue?
+## 补充信息
+任何可能帮助我们理解问题的其他信息？
 
-## Possible Solution
-If you have a suggestion for fixing this, share it here.
+## 可能的解决方案
+如果你有修复建议，请在此分享。

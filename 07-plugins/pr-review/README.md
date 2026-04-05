@@ -3,89 +3,89 @@
   <img alt="Claude How To" src="../../resources/logos/claude-howto-logo.svg">
 </picture>
 
-# PR Review Plugin
+# PR 审查插件
 
-Complete PR review workflow with security, testing, and documentation checks.
+完整的 PR 审查工作流，包括安全、测试和文档检查。
 
-## Features
+## 功能特性
 
-✅ Security analysis
-✅ Test coverage checking
-✅ Documentation verification
-✅ Code quality assessment
-✅ Performance impact analysis
+✅ 安全分析
+✅ 测试覆盖率检查
+✅ 文档验证
+✅ 代码质量评估
+✅ 性能影响分析
 
-## Installation
+## 安装
 
 ```bash
 /plugin install pr-review
 ```
 
-## What's Included
+## 包含内容
 
-### Slash Commands
-- `/review-pr` - Comprehensive PR review
-- `/check-security` - Security-focused review
-- `/check-tests` - Test coverage analysis
+### 斜杠命令
+- `/review-pr` - 全面的 PR 审查
+- `/check-security` - 安全专项审查
+- `/check-tests` - 测试覆盖率分析
 
-### Subagents
-- `security-reviewer` - Security vulnerability detection
-- `test-checker` - Test coverage analysis
-- `performance-analyzer` - Performance impact evaluation
+### 子代理
+- `security-reviewer` - 安全漏洞检测
+- `test-checker` - 测试覆盖率分析
+- `performance-analyzer` - 性能影响评估
 
-### MCP Servers
-- GitHub integration for PR data
+### MCP 服务器
+- GitHub 集成，用于获取 PR 数据
 
-### Hooks
-- `pre-review.js` - Pre-review validation
+### 钩子
+- `pre-review.js` - 审查前验证
 
-## Usage
+## 使用方法
 
-### Basic PR Review
+### 基本 PR 审查
 ```
 /review-pr
 ```
 
-### Security Check Only
+### 仅安全检查
 ```
 /check-security
 ```
 
-### Test Coverage Check
+### 测试覆盖率检查
 ```
 /check-tests
 ```
 
-## Requirements
+## 前置要求
 
 - Claude Code 1.0+
-- GitHub access
-- Git repository
+- GitHub 访问权限
+- Git 仓库
 
-## Configuration
+## 配置
 
-Set up your GitHub token:
+设置 GitHub 令牌：
 ```bash
 export GITHUB_TOKEN="your_github_token"
 ```
 
-## Example Workflow
+## 示例工作流
 
 ```
-User: /review-pr
+用户：/review-pr
 
-Claude:
-1. Runs pre-review hook (validates git repo)
-2. Fetches PR data via GitHub MCP
-3. Delegates security review to security-reviewer subagent
-4. Delegates testing to test-checker subagent
-5. Delegates performance to performance-analyzer subagent
-6. Synthesizes all findings
-7. Provides comprehensive review report
+Claude：
+1. 运行审查前钩子（验证 git 仓库）
+2. 通过 GitHub MCP 获取 PR 数据
+3. 将安全审查委派给 security-reviewer 子代理
+4. 将测试检查委派给 test-checker 子代理
+5. 将性能分析委派给 performance-analyzer 子代理
+6. 综合所有发现
+7. 提供全面的审查报告
 
-Result:
-✅ Security: No critical issues found
-⚠️  Testing: Coverage is 65%, recommend 80%+
-✅ Performance: No significant impact
-📝 Recommendations: Add tests for edge cases
+结果：
+✅ 安全：未发现严重问题
+⚠️  测试：覆盖率 65%，建议 80%+
+✅ 性能：无显著影响
+📝 建议：为边界条件添加测试
 ```

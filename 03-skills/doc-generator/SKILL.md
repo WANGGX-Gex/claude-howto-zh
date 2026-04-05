@@ -3,20 +3,20 @@ name: api-documentation-generator
 description: Generate comprehensive, accurate API documentation from source code. Use when creating or updating API documentation, generating OpenAPI specs, or when users mention API docs, endpoints, or documentation.
 ---
 
-# API Documentation Generator Skill
+# API 文档生成器技能
 
-## Generates
+## 生成内容
 
-- OpenAPI/Swagger specifications
-- API endpoint documentation
-- SDK usage examples
-- Integration guides
-- Error code references
-- Authentication guides
+- OpenAPI/Swagger 规范
+- API 端点文档
+- SDK 使用示例
+- 集成指南
+- 错误码参考
+- 认证指南
 
-## Documentation Structure
+## 文档结构
 
-### For Each Endpoint
+### 每个端点的格式
 
 ```markdown
 ## GET /api/v1/users/:id

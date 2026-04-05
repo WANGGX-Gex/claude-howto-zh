@@ -1,0 +1,81 @@
+name: 上游同步检测
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'  # 每周一 UTC 08:00
+  workflow_dispatch:       # 支持手动触发
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Add upstream remote
+        run: |
+          git remote add upstream https://github.com/luongnv89/claude-howto.git
+          git fetch upstream main
+
+      - name: Check for upstream changes
+        id: check
+        run: |
+          UPSTREAM_SHA=$(git rev-parse upstream/main)
+          if [ -f .upstream-sync-sha ]; then
+            LAST_SHA=$(cat .upstream-sync-sha)
+          else
+            LAST_SHA=""
+          fi
+          if [ "$UPSTREAM_SHA" != "$LAST_SHA" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "upstream_sha=$UPSTREAM_SHA" >> $GITHUB_OUTPUT
+            if [ -n "$LAST_SHA" ]; then
+              git log --oneline "$LAST_SHA..$UPSTREAM_SHA" -- '*.md' > /tmp/upstream-changes.txt
+            else
+              echo "初始同步" > /tmp/upstream-changes.txt
+            fi
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create sync branch and PR
+        if: steps.check.outputs.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="upstream-sync-$(date +%Y%m%d)"
+          git checkout -b "$BRANCH"
+
+          echo "${{ steps.check.outputs.upstream_sha }}" > .upstream-sync-sha
+          git add .upstream-sync-sha
+          git commit -m "chore: 检测到上游更新 ($(date +%Y-%m-%d))"
+          git push origin "$BRANCH"
+
+          CHANGES=$(cat /tmp/upstream-changes.txt)
+          gh pr create \
+            --title "上游同步：检测到 claude-howto 有新的更新" \
+            --body "## 上游变更检测
+
+          原项目 [claude-howto](https://github.com/luongnv89/claude-howto) 有新的提交。
+
+          ### 变更的提交：
+          \`\`\`
+          $CHANGES
+          \`\`\`
+
+          ### 需要的操作：
+          - [ ] 查看上游变更内容
+          - [ ] 翻译新增或修改的文档
+          - [ ] 更新术语表（如有新术语）
+          - [ ] 验证 Mermaid 图��渲染正确"

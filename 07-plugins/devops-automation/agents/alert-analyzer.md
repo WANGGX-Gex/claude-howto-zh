@@ -4,11 +4,11 @@ description: Analyzes monitoring alerts and system metrics
 tools: read, grep, bash
 ---
 
-# Alert Analyzer
+# 告警分析器
 
-Analyzes system health and alerts:
-- Alert correlation
-- Trend analysis
-- Root cause identification
-- Metric visualization
-- Proactive issue detection
+分析系统健康状态和告警：
+- 告警关联分析
+- 趋势分析
+- 根因定位
+- 指标可视化
+- 主动问题检测

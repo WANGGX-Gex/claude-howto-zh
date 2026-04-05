@@ -3,35 +3,35 @@ description: Stage all changes, create commit, and push to remote (use with caut
 allowed-tools: Bash(git add:*), Bash(git status:*), Bash(git commit:*), Bash(git push:*), Bash(git diff:*), Bash(git log:*), Bash(git pull:*)
 ---
 
-# Commit and Push Everything
+# 提交并推送所有变更
 
-⚠️ **CAUTION**: Stage ALL changes, commit, and push to remote. Use only when confident all changes belong together.
+**注意**：暂存所有变更、提交并推送到远程仓库。仅在确信所有变更属于同一批次时使用。
 
-## Workflow
+## 工作流程
 
-### 1. Analyze Changes
-Run in parallel:
-- `git status` - Show modified/added/deleted/untracked files
-- `git diff --stat` - Show change statistics
-- `git log -1 --oneline` - Show recent commit for message style
+### 1. 分析变更
+并行运行：
+- `git status` - 显示已修改/已添加/已删除/未跟踪的文件
+- `git diff --stat` - 显示变更统计
+- `git log -1 --oneline` - 显示最近提交以参考信息风格
 
-### 2. Safety Checks
+### 2. 安全检查
 
-**❌ STOP and WARN if detected:**
-- Secrets: `.env*`, `*.key`, `*.pem`, `credentials.json`, `secrets.yaml`, `id_rsa`, `*.p12`, `*.pfx`, `*.cer`
-- API Keys: Any `*_API_KEY`, `*_SECRET`, `*_TOKEN` variables with real values (not placeholders like `your-api-key`, `xxx`, `placeholder`)
-- Large files: `>10MB` without Git LFS
-- Build artifacts: `node_modules/`, `dist/`, `build/`, `__pycache__/`, `*.pyc`, `.venv/`
-- Temp files: `.DS_Store`, `thumbs.db`, `*.swp`, `*.tmp`
+**发现以下内容时停止并警告：**
+- 敏感文件：`.env*`、`*.key`、`*.pem`、`credentials.json`、`secrets.yaml`、`id_rsa`、`*.p12`、`*.pfx`、`*.cer`
+- API 密钥：任何包含真实值（非占位符如 `your-api-key`、`xxx`、`placeholder`）的 `*_API_KEY`、`*_SECRET`、`*_TOKEN` 变量
+- 大文件：未使用 Git LFS 的 `>10MB` 文件
+- 构建产物：`node_modules/`、`dist/`、`build/`、`__pycache__/`、`*.pyc`、`.venv/`
+- 临时文件：`.DS_Store`、`thumbs.db`、`*.swp`、`*.tmp`
 
-**API Key Validation:**
-Check modified files for patterns like:
+**API 密钥验证：**
+检查修改文件中的模式，如：
 ```bash
-OPENAI_API_KEY=sk-proj-xxxxx  # ❌ Real key detected!
-AWS_SECRET_KEY=AKIA...         # ❌ Real key detected!
-STRIPE_API_KEY=sk_live_...    # ❌ Real key detected!
+OPENAI_API_KEY=sk-proj-xxxxx  # ❌ 检测到真实密钥！
+AWS_SECRET_KEY=AKIA...         # ❌ 检测到真实密钥！
+STRIPE_API_KEY=sk_live_...    # ❌ 检测到真实密钥！
 
-# ✅ Acceptable placeholders:
+# ✅ 可接受的占位符：
 API_KEY=your-api-key-here
 SECRET_KEY=placeholder
 TOKEN=xxx
@@ -39,54 +39,54 @@ API_KEY=<your-key>
 SECRET=${YOUR_SECRET}
 ```
 
-**✅ Verify:**
-- `.gitignore` properly configured
-- No merge conflicts
-- Correct branch (warn if main/master)
-- API keys are placeholders only
+**验证：**
+- `.gitignore` 配置正确
+- 无合并冲突
+- 分支正确（如果是 main/master 则警告）
+- API 密钥仅为占位符
 
-### 3. Request Confirmation
+### 3. 请求确认
 
-Present summary:
+展示摘要：
 ```
-📊 Changes Summary:
-- X files modified, Y added, Z deleted
-- Total: +AAA insertions, -BBB deletions
+📊 变更摘要：
+- X 个文件已修改，Y 个已添加，Z 个已删除
+- 总计：+AAA 行插入，-BBB 行删除
 
-🔒 Safety: ✅ No secrets | ✅ No large files | ⚠️ [warnings]
-🌿 Branch: [name] → origin/[name]
+🔒 安全检查：✅ 无敏感信息 | ✅ 无大文件 | ⚠️ [警告]
+🌿 分支：[名称] → origin/[名称]
 
-I will: git add . → commit → push
+我将执行：git add . → commit → push
 
-Type 'yes' to proceed or 'no' to cancel.
+输入 'yes' 继续，输入 'no' 取消。
 ```
 
-**WAIT for explicit "yes" before proceeding.**
+**在用户明确回复 "yes" 之前等待。**
 
-### 4. Execute (After Confirmation)
+### 4. 执行（确认后）
 
-Run sequentially:
+按顺序运行：
 ```bash
 git add .
-git status  # Verify staging
+git status  # 验证暂存
 ```
 
-### 5. Generate Commit Message
+### 5. 生成提交信息
 
-Analyze changes and create conventional commit:
+分析变更并创建约定式提交：
 
-**Format:**
+**格式：**
 ```
-[type]: Brief summary (max 72 characters)
+[类型]: 简要摘要（最多 72 个字符）
 
-- Key change 1
-- Key change 2
-- Key change 3
+- 关键变更 1
+- 关键变更 2
+- 关键变更 3
 ```
 
-**Types:** `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`, `perf`, `build`, `ci`
+**类型：** `feat`、`fix`、`docs`、`style`、`refactor`、`test`、`chore`、`perf`、`build`、`ci`
 
-**Example:**
+**示例：**
 ```
 docs: Update concept README files with comprehensive documentation
 
@@ -95,58 +95,58 @@ docs: Update concept README files with comprehensive documentation
 - Expand best practices sections
 ```
 
-### 6. Commit and Push
+### 6. 提交并推送
 
 ```bash
 git commit -m "$(cat <<'EOF'
-[Generated commit message]
+[生成的提交信息]
 EOF
 )"
-git push  # If fails: git pull --rebase && git push
-git log -1 --oneline --decorate  # Verify
+git push  # 如果失败：git pull --rebase && git push
+git log -1 --oneline --decorate  # 验证
 ```
 
-### 7. Confirm Success
+### 7. 确认成功
 
 ```
-✅ Successfully pushed to remote!
+✅ 已成功推送到远程仓库！
 
-Commit: [hash] [message]
-Branch: [branch] → origin/[branch]
-Files changed: X (+insertions, -deletions)
+提交：[哈希] [信息]
+分支：[分支] → origin/[分支]
+变更文件数：X（+插入行数，-删除行数）
 ```
 
-## Error Handling
+## 错误处理
 
-- **git add fails**: Check permissions, locked files, verify repo initialized
-- **git commit fails**: Fix pre-commit hooks, check git config (user.name/email)
-- **git push fails**:
-  - Non-fast-forward: `git pull --rebase && git push`
-  - No remote branch: `git push -u origin [branch]`
-  - Protected branch: Use PR workflow instead
+- **git add 失败**：检查权限、锁定文件，验证仓库已初始化
+- **git commit 失败**：修复 pre-commit 钩子，检查 git 配置（user.name/email）
+- **git push 失败**：
+  - 非快进推送：`git pull --rebase && git push`
+  - 无远程分支：`git push -u origin [分支]`
+  - 受保护分支：改用 PR 工作流
 
-## When to Use
+## 使用场景
 
-✅ **Good:**
-- Multi-file documentation updates
-- Feature with tests and docs
-- Bug fixes across files
-- Project-wide formatting/refactoring
-- Configuration changes
+✅ **适合：**
+- 多文件文档更新
+- 包含测试和文档的功能
+- 跨文件的缺陷修复
+- 项目范围的格式化/重构
+- 配置变更
 
-❌ **Avoid:**
-- Uncertain what's being committed
-- Contains secrets/sensitive data
-- Protected branches without review
-- Merge conflicts present
-- Want granular commit history
-- Pre-commit hooks failing
+❌ **避免：**
+- 不确定要提交的内容
+- 包含敏感数据/密钥
+- 未经审查的受保护分支
+- 存在合并冲突
+- 需要细粒度的提交历史
+- pre-commit 钩子失败
 
-## Alternatives
+## 替代方案
 
-If user wants control, suggest:
-1. **Selective staging**: Review/stage specific files
-2. **Interactive staging**: `git add -p` for patch selection
-3. **PR workflow**: Create branch → push → PR (use `/pr` command)
+如果用户需要更多控制，建议：
+1. **选择性暂存**：审查/暂存特定文件
+2. **交互式暂存**：`git add -p` 按补丁选择
+3. **PR 工作流**：创建分支 → 推送 → PR（使用 `/pr` 命令）
 
-**⚠️ Remember**: Always review changes before pushing. When in doubt, use individual git commands for more control.
+**请记住**：推送前务必审查变更。如有疑问，使用单独的 git 命令以获得更多控制。

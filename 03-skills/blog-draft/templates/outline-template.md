@@ -1,97 +1,97 @@
-# Blog Post Outline: [Title]
+# 博客文章大纲：[标题]
 
-## Meta Information
+## 元信息
 
-| Attribute | Value |
+| 属性 | 值 |
 |-----------|-------|
-| **Target Audience** | [Who is this for?] |
-| **Tone** | [Formal/Casual/Technical/Conversational] |
-| **Target Length** | [Word count range] |
-| **Main Takeaway** | [One sentence: what should readers remember?] |
-| **Keywords** | [SEO keywords if relevant] |
+| **目标受众** | [面向谁？] |
+| **语气** | [正式/休闲/技术性/对话式] |
+| **目标字数** | [字数范围] |
+| **主要收获** | [一句话：读者应该记住什么？] |
+| **关键词** | [SEO 关键词（如相关）] |
 
 ---
 
-## Proposed Structure
+## 建议结构
 
-### 1. Introduction / Hook
+### 1. 引言 / 引子
 
-**Opening Hook Options:**
-- [ ] Question that resonates with reader
-- [ ] Surprising statistic or fact
-- [ ] Brief story or scenario
-- [ ] Bold statement
+**开篇引子选项：**
+- [ ] 引起读者共鸣的问题
+- [ ] 令人惊讶的统计数据或事实
+- [ ] 简短的故事或场景
+- [ ] 大胆的声明
 
-**Context Setting:**
-- Background information needed
-- Why this topic matters now
+**背景设定：**
+- 需要的背景信息
+- 为什么这个话题现在很重要
 
-**Thesis Statement:**
-- Clear statement of what the post will cover
-
----
-
-### 2. [Section Title]
-
-**Key Points:**
-- Point A: [description]
-- Point B: [description]
-
-**Supporting Evidence:**
-- From [source]: [relevant data/quote]
-
-**Transition to next section:**
-- [How this connects to what's next]
+**论点陈述：**
+- 清晰说明文章将涵盖的内容
 
 ---
 
-### 3. [Section Title]
+### 2. [章节标题]
 
-**Key Points:**
-- Point A: [description]
-- Point B: [description]
+**关键要点：**
+- 要点 A：[描述]
+- 要点 B：[描述]
 
-**Supporting Evidence:**
-- From [source]: [relevant data/quote]
+**支持证据：**
+- 来自 [来源]：[相关数据/引用]
 
-**Transition to next section:**
-- [How this connects to what's next]
-
----
-
-### 4. [Section Title] (add more sections as needed)
-
-**Key Points:**
-- Point A: [description]
-- Point B: [description]
-
-**Supporting Evidence:**
-- From [source]: [relevant data/quote]
+**过渡到下一节：**
+- [如何与下一部分衔接]
 
 ---
 
-### 5. Conclusion
+### 3. [章节标题]
 
-**Summary of Key Points:**
-- Recap point 1
-- Recap point 2
-- Recap point 3
+**关键要点：**
+- 要点 A：[描述]
+- 要点 B：[描述]
 
-**Final Thought / Call to Action:**
-- [What should readers do or think about next?]
+**支持证据：**
+- 来自 [来源]：[相关数据/引用]
 
----
-
-## Sources to Cite
-
-1. [Source Name](#) - Used for: [what information]
-2. [Source Name](#) - Used for: [what information]
-3. [Source Name](#) - Used for: [what information]
+**过渡到下一节：**
+- [如何与下一部分衔接]
 
 ---
 
-## Notes for Drafting
+### 4. [章节标题]（根据需要添加更多章节）
 
-- [Any specific requirements or constraints]
-- [Things to emphasize]
-- [Things to avoid]
+**关键要点：**
+- 要点 A：[描述]
+- 要点 B：[描述]
+
+**支持证据：**
+- 来自 [来源]：[相关数据/引用]
+
+---
+
+### 5. 结论
+
+**关键要点总结：**
+- 回顾要点 1
+- 回顾要点 2
+- 回顾要点 3
+
+**结束语 / 行动号召：**
+- [读者接下来应该做什么或思考什么？]
+
+---
+
+## 引用来源
+
+1. [来源名称](#) - 用途：[什么信息]
+2. [来源名称](#) - 用途：[什么信息]
+3. [来源名称](#) - 用途：[什么信息]
+
+---
+
+## 撰写注意事项
+
+- [任何特定要求或限制]
+- [需要强调的内容]
+- [需要避免的内容]

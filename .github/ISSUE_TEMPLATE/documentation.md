@@ -7,38 +7,38 @@ assignees: ''
 
 ---
 
-## Type of Issue
-- [ ] Typo or grammar error
-- [ ] Unclear explanation
-- [ ] Missing information
-- [ ] Broken link or reference
-- [ ] Outdated content
-- [ ] Better example needed
+## 问题类型
+- [ ] 拼写或语法错误
+- [ ] 解释不清晰
+- [ ] 信息缺失
+- [ ] 链接或引用损坏
+- [ ] 内容过时
+- [ ] 需要更好的示例
 
-## Location
-Which section has the issue?
-- **File**: (e.g., README.md, 03-skills/README.md)
-- **Section**: (e.g., "Installation Quick Reference")
-- **Line/Area**: (if specific)
+## 位置
+哪个章节有问题？
+- **文件**：（如 README.md、03-skills/README.md）
+- **章节**：（如"安装快速参考"）
+- **行/区域**：（如有具体位置）
 
-## Current Content
-What does it currently say?
+## 当前内容
+目前写的是什么？
 ```
-[Paste the current text here]
-```
-
-## Issue Description
-What's wrong with it?
-
-## Suggested Improvement
-How could this be improved or clarified?
-```
-[Provide improved text or suggestion here]
+[在此粘贴当前文本]
 ```
 
-## Why This Matters
-How does this issue impact users?
+## 问题描述
+有什么问题？
 
-## Related Documentation
-Links to related sections:
-- Related Guide: <!-- Add link here -->
+## 改进建议
+如何改进或澄清？
+```
+[在此提供改进后的文本或建议]
+```
+
+## 为什么重要
+此问题如何影响用户？
+
+## 相关文档
+相关章节链接：
+- 相关指南：<!-- 在此添加链接 -->

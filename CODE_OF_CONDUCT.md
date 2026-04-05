@@ -1,217 +1,216 @@
-# Contributor Code of Conduct
+# 贡献者行为准则
 
-## Our Commitment
+## 我们的承诺
 
-We are committed to providing a welcoming and inspiring community for all. We pledge that participating in our community is a harassment-free experience for everyone, regardless of age, body size, caste, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socioeconomic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+我们致力于为所有人提供一个友好且鼓舞人心的社区。我们承诺，参与社区的每个人都能获得无骚扰的体验，无论年龄、体型、种姓、残疾、种族、性别特征、性别认同和表达、经验水平、教育背景、社会经济地位、国籍、外貌、种族、宗教或性取向。
 
-We are dedicated to providing a positive, inclusive, and safe environment where all contributors feel respected, valued, and empowered to contribute their best work.
+我们致力于提供一个积极、包容和安全的环境，让所有贡献者都能感到被尊重、被重视，并有能力做出最好的工作。
 
-## Our Standards
+## 我们的标准
 
-Examples of behavior that contributes to creating a positive environment include:
+有助于营造积极环境的行为示例包括：
 
-### Be Respectful
-- Use welcoming and inclusive language
-- Be respectful of differing opinions, viewpoints, and experiences
-- Accept constructive criticism gracefully
-- Respect cultural and linguistic differences
-- Acknowledge and celebrate diverse backgrounds
+### 尊重他人
+- 使用友善和包容的语言
+- 尊重不同的观点、看法和经验
+- 优雅地接受建设性批评
+- 尊重文化和语言差异
+- 承认并庆祝多元背景
 
-### Be Collaborative
-- Work together to resolve conflicts
-- Give credit and recognize others' contributions
-- Help others learn and grow
-- Share knowledge and ask questions
-- Support fellow community members
+### 协作精神
+- 共同努力解决冲突
+- 给予认可并感谢他人的贡献
+- 帮助他人学习和成长
+- 分享知识并提问
+- 支持社区成员
 
-### Be Professional
-- Keep discussions focused and productive
-- Avoid demeaning or insulting remarks
-- Stay on topic in issues and discussions
-- Use clear and respectful communication
-- Assume good intent in others' messages
+### 专业态度
+- 保持讨论的专注和有效性
+- 避免贬低或侮辱性言论
+- 在 Issue 和讨论中保持主题
+- 使用清晰和尊重的沟通方式
+- 假设他人的消息出于善意
 
-### Be Inclusive
-- Welcome new contributors
-- Help onboard people new to the project
-- Provide constructive feedback
-- Include people with different perspectives
-- Create space for quiet voices to be heard
+### 包容开放
+- 欢迎新的贡献者
+- 帮助项目新成员入门
+- 提供建设性反馈
+- 包容不同观点的人
+- 为安静的声音创造表达空间
 
-## Unacceptable Behavior
+## 不可接受的行为
 
-The following behaviors are considered harassment and are unacceptable within our community:
+以下行为被视为骚扰，在我们的社区中是不可接受的：
 
-### Harassment and Discrimination
-- Offensive comments related to gender, gender identity and expression, sexual orientation, disability, mental illness, neuro(a)typicality, physical appearance, body size, age, race, or religion
-- Unwelcome comments regarding a person's lifestyle choices and practices
-- Deliberate misgendering or use of 'dead' or rejected names
-- Gratuitous or off-topic sexual images or behavior
-- Physical contact and simulated physical contact without consent or after a request to stop
+### 骚扰和歧视
+- 关于性别、性别认同和表达、性取向、残疾、精神疾病、神经多样性、外貌、体型、年龄、种族或宗教的冒犯性评论
+- 对他人生活方式选择和做法的不受欢迎的评论
+- 故意使用错误的性别称谓或使用他人已放弃的名字
+- 无端或偏离主题的色情图片或行为
+- 未经同意或在对方要求停止后的身体接触和模拟身体接触
 
-### Abusive Behavior
-- Threats of violence or violent language directed against another person
-- Incitement of violence or violent language toward any individual
-- Deliberate intimidation
-- Stalking or following
-- Harassment through repeated contact
-- Any other conduct which could reasonably be considered inappropriate
+### 滥用行为
+- 针对他人的暴力威胁或暴力语言
+- 煽动暴力或针对任何个人的暴力语言
+- 蓄意恐吓
+- 跟踪或尾随
+- 通过反复联系进行骚扰
+- 其他可合理视为不当的行为
 
-### Online Harassment
-- Sustained disruption of online discussion
-- Publishing others' private information (doxxing)
-- Unwelcome sexual attention or advances
-- Trolling or intentional disruption
-- Spam or repetitive advertising
-- Spreading misinformation or disinformation
+### 在线骚扰
+- 持续干扰在线讨论
+- 公布他人的私人信息（人肉搜索）
+- 不受欢迎的性关注或挑逗
+- 恶意挑衅或故意制造混乱
+- 垃圾信息或重复广告
+- 散布虚假或误导信息
 
-### Retaliation
-- Taking retaliatory action against someone for reporting a violation
-- Treating someone unfairly because they reported unacceptable behavior
-- Threatening to report someone in retaliation
+### 报复行为
+- 对举报违规行为的人采取报复行动
+- 因某人举报了不可接受的行为而不公平地对待他们
+- 威胁以举报作为报复手段
 
-## Scope
+## 适用范围
 
-This Code of Conduct applies to:
-- All community spaces (GitHub issues, pull requests, discussions, etc.)
-- Project repositories and documentation
-- Events and gatherings organized by or representing the project
-- Public spaces where individuals are representing the project or the community
-- Private communications when they relate to project business
+本行为准则适用于：
+- 所有社区空间（GitHub Issue、Pull Request、讨论等）
+- 项目仓库和文档
+- 由项目组织或代表项目的活动和聚会
+- 个人代表项目或社区出现的公共场所
+- 与项目事务相关的私人通信
 
-The Code of Conduct applies to all project spaces, and it also applies when an individual is representing the project or community in public spaces. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.
+本行为准则适用于所有项目空间，也适用于个人在公共场所代表项目或社区的情况。代表项目或社区的示例包括使用官方项目电子邮件地址、通过官方社交媒体账号发帖，或在线上或线下活动中担任指定代表。
 
-## Enforcement
+## 执行
 
-Community leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.
+社区领导者负责阐明和执行可接受行为标准，并将对任何他们认为不当、具有威胁性、冒犯性或有害的行为采取适当和公正的纠正措施。
 
-### Reporting a Violation
+### 举报违规行为
 
-If you experience or witness unacceptable behavior, or have any other concerns, please report it by:
+如果你经历或目睹了不可接受的行为，或有任何其他疑虑，请通过以下方式举报：
 
-1. **Email**: Contact the project maintainers at [provide contact method if available]
-2. **GitHub Issues**: Private report feature (if available in your GitHub settings)
-3. **Direct Message**: Contact a project maintainer directly
+1. **电子邮件**: 联系项目维护者（如有可用的联系方式）
+2. **GitHub Issue**: 私密举报功能（如果在你的 GitHub 设置中可用）
+3. **私信**: 直接联系项目维护者
 
-Please provide:
-- Your contact information
-- Names of those involved (if you feel comfortable sharing)
-- Description of the incident
-- Context and any relevant links
-- How the incident affected you
+请提供：
+- 你的联系方式
+- 涉及人员的姓名（如果你觉得方便分享的话）
+- 事件描述
+- 上下文和任何相关链接
+- 事件对你的影响
 
-**All reports will be kept confidential.**
+**所有举报将被保密处理。**
 
-### Investigation and Response
+### 调查和回应
 
-Community leaders will:
-- Review and investigate all complaints promptly and fairly
-- Maintain confidentiality with respect to the reporter
-- Respond to the reporter about the status of their report
-- Take appropriate action based on findings
+社区领导者将：
+- 及时公正地审查和调查所有投诉
+- 对举报者保密
+- 就举报状态回复举报者
+- 根据调查结果采取适当行动
 
-Possible actions include:
-- Private warning or coaching
-- Public apology (if the violator agrees)
-- Temporary or permanent removal from community spaces
-- Loss of contributor privileges
-- Escalation to GitHub or other platforms as needed
+可能的行动包括：
+- 私下警告或指导
+- 公开道歉（如果违规者同意）
+- 临时或永久移出社区空间
+- 取消贡献者权限
+- 根据需要向 GitHub 或其他平台升级
 
-### Appeal Process
+### 申诉流程
 
-If you believe a decision was made in error, you may appeal by:
-1. Providing new information or context
-2. Requesting a review by multiple maintainers
-3. Following up within 30 days of the initial decision
+如果你认为某项决定有误，你可以通过以下方式申诉：
+1. 提供新的信息或上下文
+2. 请求多位维护者进行审查
+3. 在初始决定后 30 天内跟进
 
-## Guidelines for Respectful Disagreement
+## 尊重的分歧指南
 
-Disagreements are natural in technical communities. Here's how to disagree respectfully:
+在技术社区中意见分歧是自然的。以下是尊重地表达分歧的方式：
 
-### Do's
-- ✅ Focus on the idea, not the person
-- ✅ Ask clarifying questions
-- ✅ Acknowledge valid points in opposing views
-- ✅ Use "I" statements ("I disagree because...")
-- ✅ Cite sources and evidence
-- ✅ Thank others for their perspective
+### 推荐做法
+- 关注想法，而非人身
+- 提出澄清性问题
+- 承认对方观点中的有效之处
+- 使用"我"陈述句（"我不同意，因为..."）
+- 引用来源和证据
+- 感谢他人的观点
 
-### Don'ts
-- ❌ Make personal attacks
-- ❌ Use dismissive language ("That's stupid")
-- ❌ Assume bad intent
-- ❌ Bring up unrelated past conflicts
-- ❌ Escalate tone or become hostile
-- ❌ Deliberately misrepresent others' views
+### 避免做法
+- 进行人身攻击
+- 使用轻蔑的语言（"这太蠢了"）
+- 假设对方出于恶意
+- 翻旧账，提及不相关的过去冲突
+- 升级语气或变得敌意
+- 故意歪曲他人的观点
 
-### Example of Respectful Disagreement
+### 尊重分歧的示例
 ```
-❌ Bad: "That's a dumb idea and you clearly don't understand the project."
+不推荐: "这是个蠢主意，你显然不了解这个项目。"
 
-✅ Good: "I see your point, but I'm concerned this approach might
-not scale well with larger projects. Have you considered the
-performance implications shown in this benchmark? I'd love to
-hear your thoughts on this."
+推荐: "我理解你的观点，但我担心这种方法在大型项目中
+可能无法很好地扩展。你是否考虑过这个基准测试
+中展示的性能影响？我很想听听你对此的看法。"
 ```
 
-## Building Bridges
+## 搭建桥梁
 
-We believe in the power of dialogue and reconciliation:
+我们相信对话和和解的力量：
 
-- If someone calls out your behavior, listen and reflect
-- Be willing to apologize if you've caused harm
-- Support others in learning and growth
-- Recognize that people make mistakes
-- Focus on solutions, not blame
-- Assume good intent while holding people accountable
+- 如果有人指出你的行为问题，请倾听并反思
+- 如果你造成了伤害，愿意道歉
+- 支持他人的学习和成长
+- 认识到人们会犯错
+- 关注解决方案，而非责备
+- 假设善意的同时让人承担责任
 
-## Benefits of Following This Code
+## 遵循本准则的好处
 
-By maintaining a respectful and inclusive community, we:
-- Attract diverse contributors with varied perspectives
-- Create better solutions through collaboration
-- Build stronger relationships
-- Make the project more welcoming to newcomers
-- Produce higher-quality documentation and examples
-- Foster a culture of learning and growth
+通过维护一个尊重和包容的社区，我们：
+- 吸引拥有不同视角的多元贡献者
+- 通过协作创造更好的解决方案
+- 建立更强的关系
+- 使项目对新人更加友好
+- 产出更高质量的文档和示例
+- 培养学习和成长的文化
 
-## Special Considerations
+## 特别注意事项
 
-### For Maintainers
-- Lead by example in adhering to this Code
-- Be responsive to reports
-- Be transparent about decisions
-- Help resolve conflicts fairly
-- Create a safe environment for all
+### 对维护者
+- 以身作则，遵守本准则
+- 对举报及时回应
+- 在决策方面保持透明
+- 帮助公正解决冲突
+- 为所有人创造安全的环境
 
-### For Contributors
-- Assume good intent from maintainers and other contributors
-- Provide constructive feedback
-- Support newcomers
-- Help enforce community standards
-- Take ownership of the community culture
+### 对贡献者
+- 假设维护者和其他贡献者出于善意
+- 提供建设性反馈
+- 支持新人
+- 帮助维护社区标准
+- 对社区文化负责
 
-### For Everyone
-- Remember there's a human behind every message
-- Take breaks if you're feeling frustrated
-- Reach out to community leaders if you need support
-- Help create the community you want to be part of
+### 对所有人
+- 记住每条消息背后都是一个真实的人
+- 如果感到沮丧，休息一下
+- 如果需要支持，联系社区领导者
+- 帮助创建你想参与的社区
 
-## Attribution
+## 归属
 
-This Code of Conduct is adapted from:
-- The [Contributor Covenant](https://www.contributor-covenant.org/)
-- The [Mozilla Community Participation Guidelines](https://www.mozilla.org/en-US/about/governance/policies/participation/)
-- The [Python Community Code of Conduct](https://www.python.org/psf/conduct/)
+本行为准则改编自：
+- [Contributor Covenant](https://www.contributor-covenant.org/)
+- [Mozilla 社区参与准则](https://www.mozilla.org/en-US/about/governance/policies/participation/)
+- [Python 社区行为准则](https://www.python.org/psf/conduct/)
 
-## Questions?
+## 问题？
 
-If you have questions about this Code of Conduct, please reach out to the project maintainers.
+如果你对本行为准则有疑问，请联系项目维护者。
 
-## Version History
+## 版本历史
 
-- **Version 1.0** (January 2026) - Initial Code of Conduct
+- **版本 1.0**（2026 年 1 月）- 初始行为准则
 
 ---
 
-**Thank you for helping us create a welcoming, inclusive, and respectful community!** 🌟
+**感谢你帮助我们创建一个友好、包容和尊重的社区！**

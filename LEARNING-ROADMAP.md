@@ -3,74 +3,74 @@
   <img alt="Claude How To" src="resources/logos/claude-howto-logo.svg">
 </picture>
 
-# 📚 Claude Code Learning Roadmap
+# 📚 Claude Code 学习路线图
 
-**New to Claude Code?** This guide helps you master Claude Code features at your own pace. Whether you're a complete beginner or an experienced developer, start with the self-assessment quiz below to find the right path for you.
-
----
-
-## 🧭 Find Your Level
-
-Not everyone starts from the same place. Take this quick self-assessment to find the right entry point.
-
-**Answer these questions honestly:**
-
-- [ ] I can start Claude Code and have a conversation (`claude`)
-- [ ] I have created or edited a CLAUDE.md file
-- [ ] I have used at least 3 built-in slash commands (e.g., /help, /compact, /model)
-- [ ] I have created a custom slash command or skill (SKILL.md)
-- [ ] I have configured an MCP server (e.g., GitHub, database)
-- [ ] I have set up hooks in ~/.claude/settings.json
-- [ ] I have created or used custom subagents (.claude/agents/)
-- [ ] I have used print mode (`claude -p`) for scripting or CI/CD
-
-**Your Level:**
-
-| Checks | Level | Start At | Time to Complete |
-|--------|-------|----------|------------------|
-| 0-2 | **Level 1: Beginner** — Getting Started | [Milestone 1A](#milestone-1a-first-commands--memory) | ~3 hours |
-| 3-5 | **Level 2: Intermediate** — Building Workflows | [Milestone 2A](#milestone-2a-automation-skills--hooks) | ~5 hours |
-| 6-8 | **Level 3: Advanced** — Power User & Team Lead | [Milestone 3A](#milestone-3a-advanced-features) | ~5 hours |
-
-> **Tip**: If you're unsure, start one level lower. It's better to review familiar material quickly than to miss foundational concepts.
-
-> **Interactive version**: Run `/self-assessment` in Claude Code for a guided, interactive quiz that scores your proficiency across all 10 feature areas and generates a personalized learning path.
+**刚接触 Claude Code？** 本指南帮助你按自己的节奏掌握 Claude Code 的各项功能。无论你是完全的初学者还是经验丰富的开发者，都可以从下方的自我评估测验开始，找到适合你的学习路径。
 
 ---
 
-## 🎯 Learning Philosophy
+## 🧭 找到你的级别
 
-The folders in this repository are numbered in **recommended learning order** based on three key principles:
+每个人的起点不同。通过这个快速自我评估找到合适的入口。
 
-1. **Dependencies** - Foundational concepts come first
-2. **Complexity** - Easier features before advanced ones
-3. **Frequency of Use** - Most common features taught early
+**诚实回答以下问题：**
 
-This approach ensures you build a solid foundation while gaining immediate productivity benefits.
+- [ ] 我能启动 Claude Code 并进行对话（`claude`）
+- [ ] 我创建或编辑过 CLAUDE.md 文件
+- [ ] 我使用过至少 3 个内置斜杠命令（Slash Command）（如 /help、/compact、/model）
+- [ ] 我创建过自定义斜杠命令或技能（Skill）（SKILL.md）
+- [ ] 我配置过 MCP 服务器（如 GitHub、数据库）
+- [ ] 我在 ~/.claude/settings.json 中设置过钩子（Hook）
+- [ ] 我创建或使用过自定义子代理（Subagent）（.claude/agents/）
+- [ ] 我使用过打印模式（`claude -p`）进行脚本编写或 CI/CD
+
+**你的级别：**
+
+| 勾选数 | 级别 | 从这里开始 | 完成时间 |
+|--------|------|----------|----------|
+| 0-2 | **级别 1：初学者** — 入门 | [里程碑 1A](#里程碑-1a第一批命令与记忆) | 约 3 小时 |
+| 3-5 | **级别 2：中级** — 构建工作流 | [里程碑 2A](#里程碑-2a自动化技能与钩子) | 约 5 小时 |
+| 6-8 | **级别 3：高级** — 高级用户与团队负责人 | [里程碑 3A](#里程碑-3a高级功能) | 约 5 小时 |
+
+> **提示**：如果不确定，就从低一级开始。快速复习熟悉的内容总比错过基础概念要好。
+
+> **交互版本**：在 Claude Code 中运行 `/self-assessment`，获取引导式交互测验，评估你在所有 10 个功能领域的熟练程度，并生成个性化学习路径。
 
 ---
 
-## 🗺️ Your Learning Path
+## 🎯 学习理念
+
+本仓库中的文件夹按**推荐的学习顺序**编号，基于三个关键原则：
+
+1. **依赖关系** — 基础概念优先
+2. **复杂度** — 简单功能先于高级功能
+3. **使用频率** — 最常用的功能最先教授
+
+这种方式确保你在获得即时生产力的同时，建立扎实的基础。
+
+---
+
+## 🗺️ 你的学习路径
 
 ```mermaid
 graph TD
-    Q["🧭 Self-Assessment Quiz<br/>Find Your Level"] --> L1
+    Q["🧭 自我评估测验<br/>找到你的级别"] --> L1
     Q --> L2
     Q --> L3
 
-    subgraph L1["🟢 Level 1: Beginner — Getting Started"]
+    subgraph L1["🟢 级别 1：初学者 — 入门"]
         direction LR
-        A["1A: First Commands & Memory<br/>Slash Commands + Memory"] --> B["1B: Safe Exploration<br/>Checkpoints + CLI Basics"]
+        A["1A：第一批命令与记忆<br/>斜杠命令 + 记忆"] --> B["1B：安全探索<br/>检查点 + CLI 基础"]
     end
 
-    subgraph L2["🔵 Level 2: Intermediate — Building Workflows"]
+    subgraph L2["🔵 级别 2：中级 — 构建工作流"]
         direction LR
-        C["2A: Automation<br/>Skills + Hooks"] --> D["2B: Integration<br/>MCP + Subagents"]
+        C["2A：自动化<br/>技能 + 钩子"] --> D["2B：集成<br/>MCP + 子代理"]
     end
 
-    subgraph L3["🔴 Level 3: Advanced — Power User"]
+    subgraph L3["🔴 级别 3：高级 — 高级用户"]
         direction LR
-        E["3A: Advanced Features<br/>Planning + Permissions"] --> F["3B: Team & Distribution<br/>Plugins + CLI Mastery"]
+        E["3A：高级功能<br/>规划 + 权限"] --> F["3B：团队与分发<br/>插件 + CLI 精通"]
     end
 
     L1 --> L2
@@ -85,174 +85,174 @@ graph TD
     style F fill:#B71C1C,color:#fff
 ```
 
-**Color Legend:**
-- 💜 Purple: Self-Assessment Quiz
-- 🟢 Green: Level 1 — Beginner path
-- 🔵 Blue / 🟡 Gold: Level 2 — Intermediate path
-- 🔴 Red: Level 3 — Advanced path
+**颜色图例：**
+- 💜 紫色：自我评估测验
+- 🟢 绿色：级别 1 — 初学者路径
+- 🔵 蓝色 / 🟡 金色：级别 2 — 中级路径
+- 🔴 红色：级别 3 — 高级路径
 
 ---
 
-## 📊 Complete Roadmap Table
+## 📊 完整路线图表格
 
-| Step | Feature | Complexity | Time | Level | Dependencies | Why Learn This | Key Benefits |
-|------|---------|-----------|------|-------|--------------|----------------|--------------|
-| **1** | [Slash Commands](01-slash-commands/) | ⭐ Beginner | 30 min | Level 1 | None | Quick productivity wins (55+ built-in + 5 bundled skills) | Instant automation, team standards |
-| **2** | [Memory](02-memory/) | ⭐⭐ Beginner+ | 45 min | Level 1 | None | Essential for all features | Persistent context, preferences |
-| **3** | [Checkpoints](08-checkpoints/) | ⭐⭐ Intermediate | 45 min | Level 1 | Session management | Safe exploration | Experimentation, recovery |
-| **4** | [CLI Basics](10-cli/) | ⭐⭐ Beginner+ | 30 min | Level 1 | None | Core CLI usage | Interactive & print mode |
-| **5** | [Skills](03-skills/) | ⭐⭐ Intermediate | 1 hour | Level 2 | Slash Commands | Automatic expertise | Reusable capabilities, consistency |
-| **6** | [Hooks](06-hooks/) | ⭐⭐ Intermediate | 1 hour | Level 2 | Tools, Commands | Workflow automation (25 events, 4 types) | Validation, quality gates |
-| **7** | [MCP](05-mcp/) | ⭐⭐⭐ Intermediate+ | 1 hour | Level 2 | Configuration | Live data access | Real-time integration, APIs |
-| **8** | [Subagents](04-subagents/) | ⭐⭐⭐ Intermediate+ | 1.5 hours | Level 2 | Memory, Commands | Complex task handling (6 built-in including Bash) | Delegation, specialized expertise |
-| **9** | [Advanced Features](09-advanced-features/) | ⭐⭐⭐⭐⭐ Advanced | 2-3 hours | Level 3 | All previous | Power user tools | Planning, Auto Mode, Channels, Voice Dictation, permissions |
-| **10** | [Plugins](07-plugins/) | ⭐⭐⭐⭐ Advanced | 2 hours | Level 3 | All previous | Complete solutions | Team onboarding, distribution |
-| **11** | [CLI Mastery](10-cli/) | ⭐⭐⭐ Advanced | 1 hour | Level 3 | Recommended: All | Master command-line usage | Scripting, CI/CD, automation |
+| 步骤 | 功能 | 复杂度 | 时间 | 级别 | 依赖 | 为什么要学 | 核心收益 |
+|------|------|--------|------|------|------|-----------|---------|
+| **1** | [斜杠命令](01-slash-commands/) | ⭐ 初学者 | 30 分钟 | 级别 1 | 无 | 快速提升生产力（55+ 内置 + 5 个捆绑技能） | 即时自动化、团队标准化 |
+| **2** | [记忆](02-memory/) | ⭐⭐ 初学者+ | 45 分钟 | 级别 1 | 无 | 所有功能的基础 | 持久化上下文、个人偏好 |
+| **3** | [检查点](08-checkpoints/) | ⭐⭐ 中级 | 45 分钟 | 级别 1 | 会话管理 | 安全探索 | 实验、恢复 |
+| **4** | [CLI 基础](10-cli/) | ⭐⭐ 初学者+ | 30 分钟 | 级别 1 | 无 | 核心 CLI 用法 | 交互与打印模式 |
+| **5** | [技能](03-skills/) | ⭐⭐ 中级 | 1 小时 | 级别 2 | 斜杠命令 | 自动化专业能力 | 可复用能力、一致性 |
+| **6** | [钩子](06-hooks/) | ⭐⭐ 中级 | 1 小时 | 级别 2 | 工具、命令 | 工作流自动化（25 个事件、4 种类型） | 验证、质量门控 |
+| **7** | [MCP](05-mcp/) | ⭐⭐⭐ 中级+ | 1 小时 | 级别 2 | 配置 | 实时数据访问 | 实时集成、API |
+| **8** | [子代理](04-subagents/) | ⭐⭐⭐ 中级+ | 1.5 小时 | 级别 2 | 记忆、命令 | 复杂任务处理（6 个内置，含 Bash） | 任务委派、专业化能力 |
+| **9** | [高级功能](09-advanced-features/) | ⭐⭐⭐⭐⭐ 高级 | 2-3 小时 | 级别 3 | 以上全部 | 高级用户工具 | 规划、自动模式、频道、语音输入、权限 |
+| **10** | [插件](07-plugins/) | ⭐⭐⭐⭐ 高级 | 2 小时 | 级别 3 | 以上全部 | 完整解决方案 | 团队入门、分发 |
+| **11** | [CLI 精通](10-cli/) | ⭐⭐⭐ 高级 | 1 小时 | 级别 3 | 推荐：全部 | 精通命令行 | 脚本、CI/CD、自动化 |
 
-**Total Learning Time**: ~11-13 hours (or jump to your level and save time)
+**总学习时间**：约 11-13 小时（或直接跳到你的级别以节省时间）
 
 ---
 
-## 🟢 Level 1: Beginner — Getting Started
+## 🟢 级别 1：初学者 — 入门
 
-**For**: Users with 0-2 quiz checks
-**Time**: ~3 hours
-**Focus**: Immediate productivity, understanding fundamentals
-**Outcome**: Comfortable daily user, ready for Level 2
+**适用人群**：测验勾选 0-2 项的用户
+**时间**：约 3 小时
+**重点**：即时生产力、理解基础概念
+**成果**：成为舒适的日常用户，准备进入级别 2
 
-### Milestone 1A: First Commands & Memory
+### 里程碑 1A：第一批命令与记忆
 
-**Topics**: Slash Commands + Memory
-**Time**: 1-2 hours
-**Complexity**: ⭐ Beginner
-**Goal**: Immediate productivity boost with custom commands and persistent context
+**主题**：斜杠命令 + 记忆（Memory）
+**时间**：1-2 小时
+**复杂度**：⭐ 初学者
+**目标**：通过自定义命令和持久化上下文立即提升生产力
 
-#### What You'll Achieve
-✅ Create custom slash commands for repetitive tasks
-✅ Set up project memory for team standards
-✅ Configure personal preferences
-✅ Understand how Claude loads context automatically
+#### 你将实现什么
+✅ 为重复性任务创建自定义斜杠命令
+✅ 为团队标准设置项目记忆
+✅ 配置个人偏好
+✅ 理解 Claude 如何自动加载上下文
 
-#### Hands-on Exercises
+#### 实践练习
 
 ```bash
-# Exercise 1: Install your first slash command
+# 练习 1：安装你的第一个斜杠命令
 mkdir -p .claude/commands
 cp 01-slash-commands/optimize.md .claude/commands/
 
-# Exercise 2: Create project memory
+# 练习 2：创建项目记忆
 cp 02-memory/project-CLAUDE.md ./CLAUDE.md
 
-# Exercise 3: Try it out
-# In Claude Code, type: /optimize
+# 练习 3：试一试
+# 在 Claude Code 中输入：/optimize
 ```
 
-#### Success Criteria
-- [ ] Successfully invoke `/optimize` command
-- [ ] Claude remembers your project standards from CLAUDE.md
-- [ ] You understand when to use slash commands vs. memory
+#### 成功标准
+- [ ] 成功调用 `/optimize` 命令
+- [ ] Claude 能从 CLAUDE.md 中记住你的项目标准
+- [ ] 理解何时使用斜杠命令与记忆
 
-#### Next Steps
-Once comfortable, read:
+#### 后续步骤
+熟悉后，请阅读：
 - [01-slash-commands/README.md](01-slash-commands/README.md)
 - [02-memory/README.md](02-memory/README.md)
 
-> **Check your understanding**: Run `/lesson-quiz slash-commands` or `/lesson-quiz memory` in Claude Code to test what you've learned.
+> **检验你的理解**：在 Claude Code 中运行 `/lesson-quiz slash-commands` 或 `/lesson-quiz memory` 来测试所学内容。
 
 ---
 
-### Milestone 1B: Safe Exploration
+### 里程碑 1B：安全探索
 
-**Topics**: Checkpoints + CLI Basics
-**Time**: 1 hour
-**Complexity**: ⭐⭐ Beginner+
-**Goal**: Learn to experiment safely and use core CLI commands
+**主题**：检查点（Checkpoint） + CLI 基础
+**时间**：1 小时
+**复杂度**：⭐⭐ 初学者+
+**目标**：学会安全实验并使用核心 CLI 命令
 
-#### What You'll Achieve
-✅ Create and restore checkpoints for safe experimentation
-✅ Understand interactive vs. print mode
-✅ Use basic CLI flags and options
-✅ Process files via piping
+#### 你将实现什么
+✅ 创建和恢复检查点以安全实验
+✅ 理解交互模式与打印模式
+✅ 使用基本的 CLI 标志和选项
+✅ 通过管道处理文件
 
-#### Hands-on Exercises
+#### 实践练习
 
 ```bash
-# Exercise 1: Try checkpoint workflow
-# In Claude Code:
-# Make some experimental changes, then press Esc+Esc or use /rewind
-# Select the checkpoint before your experiment
-# Choose "Restore code and conversation" to go back
+# 练习 1：尝试检查点工作流
+# 在 Claude Code 中：
+# 做一些实验性更改，然后按 Esc+Esc 或使用 /rewind
+# 选择实验前的检查点
+# 选择"恢复代码和对话"以回到之前的状态
 
-# Exercise 2: Interactive vs Print mode
-claude "explain this project"           # Interactive mode
-claude -p "explain this function"       # Print mode (non-interactive)
+# 练习 2：交互模式与打印模式
+claude "explain this project"           # 交互模式
+claude -p "explain this function"       # 打印模式（非交互式）
 
-# Exercise 3: Process file content via piping
+# 练习 3：通过管道处理文件内容
 cat error.log | claude -p "explain this error"
 ```
 
-#### Success Criteria
-- [ ] Created and reverted to a checkpoint
-- [ ] Used both interactive and print mode
-- [ ] Piped a file to Claude for analysis
-- [ ] Understand when to use checkpoints for safe experimentation
+#### 成功标准
+- [ ] 创建并回退到检查点
+- [ ] 使用了交互模式和打印模式
+- [ ] 通过管道将文件传给 Claude 分析
+- [ ] 理解何时使用检查点进行安全实验
 
-#### Next Steps
-- Read: [08-checkpoints/README.md](08-checkpoints/README.md)
-- Read: [10-cli/README.md](10-cli/README.md)
-- **Ready for Level 2!** Proceed to [Milestone 2A](#milestone-2a-automation-skills--hooks)
+#### 后续步骤
+- 阅读：[08-checkpoints/README.md](08-checkpoints/README.md)
+- 阅读：[10-cli/README.md](10-cli/README.md)
+- **准备进入级别 2！** 前往[里程碑 2A](#里程碑-2a自动化技能与钩子)
 
-> **Check your understanding**: Run `/lesson-quiz checkpoints` or `/lesson-quiz cli` to verify you're ready for Level 2.
-
----
-
-## 🔵 Level 2: Intermediate — Building Workflows
-
-**For**: Users with 3-5 quiz checks
-**Time**: ~5 hours
-**Focus**: Automation, integration, task delegation
-**Outcome**: Automated workflows, external integrations, ready for Level 3
-
-### Prerequisites Check
-
-Before starting Level 2, make sure you're comfortable with these Level 1 concepts:
-
-- [ ] Can create and use slash commands ([01-slash-commands/](01-slash-commands/))
-- [ ] Have set up project memory via CLAUDE.md ([02-memory/](02-memory/))
-- [ ] Know how to create and restore checkpoints ([08-checkpoints/](08-checkpoints/))
-- [ ] Can use `claude` and `claude -p` from the command line ([10-cli/](10-cli/))
-
-> **Gaps?** Review the linked tutorials above before continuing.
+> **检验你的理解**：运行 `/lesson-quiz checkpoints` 或 `/lesson-quiz cli` 以确认你已准备好进入级别 2。
 
 ---
 
-### Milestone 2A: Automation (Skills + Hooks)
+## 🔵 级别 2：中级 — 构建工作流
 
-**Topics**: Skills + Hooks
-**Time**: 2-3 hours
-**Complexity**: ⭐⭐ Intermediate
-**Goal**: Automate common workflows and quality checks
+**适用人群**：测验勾选 3-5 项的用户
+**时间**：约 5 小时
+**重点**：自动化、集成、任务委派
+**成果**：自动化工作流、外部集成，准备进入级别 3
 
-#### What You'll Achieve
-✅ Auto-invoke specialized capabilities with YAML frontmatter (including `effort` and `shell` fields)
-✅ Set up event-driven automation across 25 hook events
-✅ Use all 4 hook types (command, http, prompt, agent)
-✅ Enforce code quality standards
-✅ Create custom hooks for your workflow
+### 前置条件检查
 
-#### Hands-on Exercises
+在开始级别 2 之前，确保你已掌握以下级别 1 的概念：
+
+- [ ] 能创建和使用斜杠命令（[01-slash-commands/](01-slash-commands/)）
+- [ ] 已通过 CLAUDE.md 设置项目记忆（[02-memory/](02-memory/)）
+- [ ] 知道如何创建和恢复检查点（[08-checkpoints/](08-checkpoints/)）
+- [ ] 能从命令行使用 `claude` 和 `claude -p`（[10-cli/](10-cli/)）
+
+> **有差距？** 请先复习上方链接的教程。
+
+---
+
+### 里程碑 2A：自动化（技能 + 钩子）
+
+**主题**：技能 + 钩子
+**时间**：2-3 小时
+**复杂度**：⭐⭐ 中级
+**目标**：自动化常见工作流和质量检查
+
+#### 你将实现什么
+✅ 通过 YAML 前置元数据（Frontmatter）自动调用专业能力（包括 `effort` 和 `shell` 字段）
+✅ 在 25 个钩子事件中设置事件驱动自动化
+✅ 使用全部 4 种钩子类型（command、http、prompt、agent）
+✅ 强制执行代码质量标准
+✅ 为你的工作流创建自定义钩子
+
+#### 实践练习
 
 ```bash
-# Exercise 1: Install a skill
+# 练习 1：安装一个技能
 cp -r 03-skills/code-review ~/.claude/skills/
 
-# Exercise 2: Set up hooks
+# 练习 2：设置钩子
 mkdir -p ~/.claude/hooks
 cp 06-hooks/pre-tool-check.sh ~/.claude/hooks/
 chmod +x ~/.claude/hooks/pre-tool-check.sh
 
-# Exercise 3: Configure hooks in settings
-# Add to ~/.claude/settings.json:
+# 练习 3：在设置中配置钩子
+# 添加到 ~/.claude/settings.json：
 {
   "hooks": {
     "PreToolUse": [
@@ -270,478 +270,478 @@ chmod +x ~/.claude/hooks/pre-tool-check.sh
 }
 ```
 
-#### Success Criteria
-- [ ] Code review skill automatically invoked when relevant
-- [ ] PreToolUse hook runs before tool execution
-- [ ] You understand skill auto-invocation vs. hook event triggers
+#### 成功标准
+- [ ] 代码审查技能在相关场景自动调用
+- [ ] PreToolUse 钩子在工具执行前运行
+- [ ] 理解技能自动调用与钩子事件触发的区别
 
-#### Next Steps
-- Create your own custom skill
-- Set up additional hooks for your workflow
-- Read: [03-skills/README.md](03-skills/README.md)
-- Read: [06-hooks/README.md](06-hooks/README.md)
+#### 后续步骤
+- 创建你自己的自定义技能
+- 为你的工作流设置更多钩子
+- 阅读：[03-skills/README.md](03-skills/README.md)
+- 阅读：[06-hooks/README.md](06-hooks/README.md)
 
-> **Check your understanding**: Run `/lesson-quiz skills` or `/lesson-quiz hooks` to test your knowledge before moving on.
+> **检验你的理解**：运行 `/lesson-quiz skills` 或 `/lesson-quiz hooks` 在继续之前测试你的知识。
 
 ---
 
-### Milestone 2B: Integration (MCP + Subagents)
+### 里程碑 2B：集成（MCP + 子代理）
 
-**Topics**: MCP + Subagents
-**Time**: 2-3 hours
-**Complexity**: ⭐⭐⭐ Intermediate+
-**Goal**: Integrate external services and delegate complex tasks
+**主题**：MCP + 子代理
+**时间**：2-3 小时
+**复杂度**：⭐⭐⭐ 中级+
+**目标**：集成外部服务并委派复杂任务
 
-#### What You'll Achieve
-✅ Access live data from GitHub, databases, etc.
-✅ Delegate work to specialized AI agents
-✅ Understand when to use MCP vs. subagents
-✅ Build integrated workflows
+#### 你将实现什么
+✅ 从 GitHub、数据库等访问实时数据
+✅ 将工作委派给专业化 AI 代理（Agent）
+✅ 理解何时使用 MCP 与子代理
+✅ 构建集成工作流
 
-#### Hands-on Exercises
+#### 实践练习
 
 ```bash
-# Exercise 1: Set up GitHub MCP
+# 练习 1：设置 GitHub MCP
 export GITHUB_TOKEN="your_github_token"
 claude mcp add github -- npx -y @modelcontextprotocol/server-github
 
-# Exercise 2: Test MCP integration
-# In Claude Code: /mcp__github__list_prs
+# 练习 2：测试 MCP 集成
+# 在 Claude Code 中：/mcp__github__list_prs
 
-# Exercise 3: Install subagents
+# 练习 3：安装子代理
 mkdir -p .claude/agents
 cp 04-subagents/*.md .claude/agents/
 ```
 
-#### Integration Exercise
-Try this complete workflow:
-1. Use MCP to fetch a GitHub PR
-2. Let Claude delegate review to code-reviewer subagent
-3. Use hooks to run tests automatically
+#### 集成练习
+尝试这个完整的工作流：
+1. 使用 MCP 获取一个 GitHub PR
+2. 让 Claude 将审查任务委派给代码审查子代理
+3. 使用钩子自动运行测试
 
-#### Success Criteria
-- [ ] Successfully query GitHub data via MCP
-- [ ] Claude delegates complex tasks to subagents
-- [ ] You understand the difference between MCP and subagents
-- [ ] Combined MCP + subagents + hooks in a workflow
+#### 成功标准
+- [ ] 通过 MCP 成功查询 GitHub 数据
+- [ ] Claude 将复杂任务委派给子代理
+- [ ] 理解 MCP 和子代理的区别
+- [ ] 在工作流中组合使用 MCP + 子代理 + 钩子
 
-#### Next Steps
-- Set up additional MCP servers (database, Slack, etc.)
-- Create custom subagents for your domain
-- Read: [05-mcp/README.md](05-mcp/README.md)
-- Read: [04-subagents/README.md](04-subagents/README.md)
-- **Ready for Level 3!** Proceed to [Milestone 3A](#milestone-3a-advanced-features)
+#### 后续步骤
+- 设置更多 MCP 服务器（数据库、Slack 等）
+- 为你的领域创建自定义子代理
+- 阅读：[05-mcp/README.md](05-mcp/README.md)
+- 阅读：[04-subagents/README.md](04-subagents/README.md)
+- **准备进入级别 3！** 前往[里程碑 3A](#里程碑-3a高级功能)
 
-> **Check your understanding**: Run `/lesson-quiz mcp` or `/lesson-quiz subagents` to verify you're ready for Level 3.
-
----
-
-## 🔴 Level 3: Advanced — Power User & Team Lead
-
-**For**: Users with 6-8 quiz checks
-**Time**: ~5 hours
-**Focus**: Team tooling, CI/CD, enterprise features, plugin development
-**Outcome**: Power user, can set up team workflows and CI/CD
-
-### Prerequisites Check
-
-Before starting Level 3, make sure you're comfortable with these Level 2 concepts:
-
-- [ ] Can create and use skills with auto-invocation ([03-skills/](03-skills/))
-- [ ] Have set up hooks for event-driven automation ([06-hooks/](06-hooks/))
-- [ ] Can configure MCP servers for external data ([05-mcp/](05-mcp/))
-- [ ] Know how to use subagents for task delegation ([04-subagents/](04-subagents/))
-
-> **Gaps?** Review the linked tutorials above before continuing.
+> **检验你的理解**：运行 `/lesson-quiz mcp` 或 `/lesson-quiz subagents` 以确认你已准备好进入级别 3。
 
 ---
 
-### Milestone 3A: Advanced Features
+## 🔴 级别 3：高级 — 高级用户与团队负责人
 
-**Topics**: Advanced Features (Planning, Permissions, Extended Thinking, Auto Mode, Channels, Voice Dictation, Remote/Desktop/Web)
-**Time**: 2-3 hours
-**Complexity**: ⭐⭐⭐⭐⭐ Advanced
-**Goal**: Master advanced workflows and power user tools
+**适用人群**：测验勾选 6-8 项的用户
+**时间**：约 5 小时
+**重点**：团队工具、CI/CD、企业功能、插件（Plugin）开发
+**成果**：成为高级用户，能搭建团队工作流和 CI/CD
 
-#### What You'll Achieve
-✅ Planning mode for complex features
-✅ Fine-grained permission control with 6 modes (default, acceptEdits, plan, auto, dontAsk, bypassPermissions)
-✅ Extended thinking via Alt+T / Option+T toggle
-✅ Background task management
-✅ Auto Memory for learned preferences
-✅ Auto Mode with background safety classifier
-✅ Channels for structured multi-session workflows
-✅ Voice Dictation for hands-free interaction
-✅ Remote control, desktop app, and web sessions
-✅ Agent Teams for multi-agent collaboration
+### 前置条件检查
 
-#### Hands-on Exercises
+在开始级别 3 之前，确保你已掌握以下级别 2 的概念：
+
+- [ ] 能创建和使用具有自动调用功能的技能（[03-skills/](03-skills/)）
+- [ ] 已设置事件驱动自动化的钩子（[06-hooks/](06-hooks/)）
+- [ ] 能配置 MCP 服务器以访问外部数据（[05-mcp/](05-mcp/)）
+- [ ] 知道如何使用子代理进行任务委派（[04-subagents/](04-subagents/)）
+
+> **有差距？** 请先复习上方链接的教程。
+
+---
+
+### 里程碑 3A：高级功能
+
+**主题**：高级功能（规划、权限、扩展思考、自动模式、频道、语音输入、远程/桌面/Web）
+**时间**：2-3 小时
+**复杂度**：⭐⭐⭐⭐⭐ 高级
+**目标**：掌握高级工作流和高级用户工具
+
+#### 你将实现什么
+✅ 规划模式处理复杂功能
+✅ 6 种权限模式的细粒度控制（default、acceptEdits、plan、auto、dontAsk、bypassPermissions）
+✅ 通过 Alt+T / Option+T 切换扩展思考
+✅ 后台任务管理
+✅ 自动记忆学习偏好
+✅ 带后台安全分类器的自动模式
+✅ 频道实现结构化多会话工作流
+✅ 语音输入实现免手操作
+✅ 远程控制、桌面应用和 Web 会话
+✅ 代理团队实现多代理协作
+
+#### 实践练习
 
 ```bash
-# Exercise 1: Use planning mode
+# 练习 1：使用规划模式
 /plan Implement user authentication system
 
-# Exercise 2: Try permission modes (6 available: default, acceptEdits, plan, auto, dontAsk, bypassPermissions)
+# 练习 2：尝试权限模式（6 种可用：default、acceptEdits、plan、auto、dontAsk、bypassPermissions）
 claude --permission-mode plan "analyze this codebase"
 claude --permission-mode acceptEdits "refactor the auth module"
 claude --permission-mode auto "implement the feature"
 
-# Exercise 3: Enable extended thinking
-# Press Alt+T (Option+T on macOS) during a session to toggle
+# 练习 3：启用扩展思考
+# 在会话中按 Alt+T（macOS 上为 Option+T）来切换
 
-# Exercise 4: Advanced checkpoint workflow
-# 1. Create checkpoint "Clean state"
-# 2. Use planning mode to design a feature
-# 3. Implement with subagent delegation
-# 4. Run tests in background
-# 5. If tests fail, rewind to checkpoint
-# 6. Try alternative approach
+# 练习 4：高级检查点工作流
+# 1. 创建检查点 "Clean state"
+# 2. 使用规划模式设计功能
+# 3. 通过子代理委派来实现
+# 4. 在后台运行测试
+# 5. 如果测试失败，回退到检查点
+# 6. 尝试替代方案
 
-# Exercise 5: Try auto mode (background safety classifier)
+# 练习 5：尝试自动模式（后台安全分类器）
 claude --permission-mode auto "implement user settings page"
 
-# Exercise 6: Enable agent teams
+# 练习 6：启用代理团队
 export CLAUDE_AGENT_TEAMS=1
-# Ask Claude: "Implement feature X using a team approach"
+# 询问 Claude："Implement feature X using a team approach"
 
-# Exercise 7: Scheduled tasks
+# 练习 7：定时任务
 /loop 5m /check-status
-# Or use CronCreate for persistent scheduled tasks
+# 或使用 CronCreate 创建持久化定时任务
 
-# Exercise 8: Channels for multi-session workflows
-# Use channels to organize work across sessions
+# 练习 8：多会话工作流的频道
+# 使用频道跨会话组织工作
 
-# Exercise 9: Voice Dictation
-# Use voice input for hands-free interaction with Claude Code
+# 练习 9：语音输入
+# 使用语音输入与 Claude Code 进行免手操作交互
 ```
 
-#### Success Criteria
-- [ ] Used planning mode for a complex feature
-- [ ] Configured permission modes (plan, acceptEdits, auto, dontAsk)
-- [ ] Toggled extended thinking with Alt+T / Option+T
-- [ ] Used auto mode with background safety classifier
-- [ ] Used background tasks for long operations
-- [ ] Explored Channels for multi-session workflows
-- [ ] Tried Voice Dictation for hands-free input
-- [ ] Understand Remote Control, Desktop App, and Web sessions
-- [ ] Enabled and used Agent Teams for collaborative tasks
-- [ ] Used `/loop` for recurring tasks or scheduled monitoring
+#### 成功标准
+- [ ] 使用规划模式完成复杂功能
+- [ ] 配置了权限模式（plan、acceptEdits、auto、dontAsk）
+- [ ] 使用 Alt+T / Option+T 切换扩展思考
+- [ ] 使用了带后台安全分类器的自动模式
+- [ ] 使用后台任务执行长时间操作
+- [ ] 探索了频道的多会话工作流
+- [ ] 尝试了语音输入的免手操作
+- [ ] 了解远程控制、桌面应用和 Web 会话
+- [ ] 启用并使用代理团队进行协作任务
+- [ ] 使用 `/loop` 进行循环任务或定时监控
 
-#### Next Steps
-- Read: [09-advanced-features/README.md](09-advanced-features/README.md)
+#### 后续步骤
+- 阅读：[09-advanced-features/README.md](09-advanced-features/README.md)
 
-> **Check your understanding**: Run `/lesson-quiz advanced` to test your mastery of power user features.
+> **检验你的理解**：运行 `/lesson-quiz advanced` 测试你对高级用户功能的掌握程度。
 
 ---
 
-### Milestone 3B: Team & Distribution (Plugins + CLI Mastery)
+### 里程碑 3B：团队与分发（插件 + CLI 精通）
 
-**Topics**: Plugins + CLI Mastery + CI/CD
-**Time**: 2-3 hours
-**Complexity**: ⭐⭐⭐⭐ Advanced
-**Goal**: Build team tooling, create plugins, master CI/CD integration
+**主题**：插件 + CLI 精通 + CI/CD
+**时间**：2-3 小时
+**复杂度**：⭐⭐⭐⭐ 高级
+**目标**：构建团队工具、创建插件、精通 CI/CD 集成
 
-#### What You'll Achieve
-✅ Install and create complete bundled plugins
-✅ Master CLI for scripting and automation
-✅ Set up CI/CD integration with `claude -p`
-✅ JSON output for automated pipelines
-✅ Session management and batch processing
+#### 你将实现什么
+✅ 安装和创建完整的捆绑插件
+✅ 精通用于脚本和自动化的 CLI
+✅ 使用 `claude -p` 设置 CI/CD 集成
+✅ 用于自动化流水线的 JSON 输出
+✅ 会话管理和批量处理
 
-#### Hands-on Exercises
+#### 实践练习
 
 ```bash
-# Exercise 1: Install a complete plugin
-# In Claude Code: /plugin install pr-review
+# 练习 1：安装一个完整的插件
+# 在 Claude Code 中：/plugin install pr-review
 
-# Exercise 2: Print mode for CI/CD
+# 练习 2：用于 CI/CD 的打印模式
 claude -p "Run all tests and generate report"
 
-# Exercise 3: JSON output for scripts
+# 练习 3：用于脚本的 JSON 输出
 claude -p --output-format json "list all functions"
 
-# Exercise 4: Session management and resumption
+# 练习 4：会话管理和恢复
 claude -r "feature-auth" "continue implementation"
 
-# Exercise 5: CI/CD integration with constraints
+# 练习 5：带约束的 CI/CD 集成
 claude -p --max-turns 3 --output-format json "review code"
 
-# Exercise 6: Batch processing
+# 练习 6：批量处理
 for file in *.md; do
   claude -p --output-format json "summarize this: $(cat $file)" > ${file%.md}.summary.json
 done
 ```
 
-#### CI/CD Integration Exercise
-Create a simple CI/CD script:
-1. Use `claude -p` to review changed files
-2. Output results as JSON
-3. Process with `jq` for specific issues
-4. Integrate into GitHub Actions workflow
+#### CI/CD 集成练习
+创建一个简单的 CI/CD 脚本：
+1. 使用 `claude -p` 审查更改的文件
+2. 以 JSON 格式输出结果
+3. 用 `jq` 处理特定问题
+4. 集成到 GitHub Actions 工作流中
 
-#### Success Criteria
-- [ ] Installed and used a plugin
-- [ ] Built or modified a plugin for your team
-- [ ] Used print mode (`claude -p`) in CI/CD
-- [ ] Generated JSON output for scripting
-- [ ] Resumed a previous session successfully
-- [ ] Created a batch processing script
-- [ ] Integrated Claude into a CI/CD workflow
+#### 成功标准
+- [ ] 安装并使用了插件
+- [ ] 为团队构建或修改了插件
+- [ ] 在 CI/CD 中使用了打印模式（`claude -p`）
+- [ ] 生成了用于脚本的 JSON 输出
+- [ ] 成功恢复了之前的会话
+- [ ] 创建了批量处理脚本
+- [ ] 将 Claude 集成到 CI/CD 工作流中
 
-#### Real-World Use Cases for CLI
-- **Code Review Automation**: Run code reviews in CI/CD pipelines
-- **Log Analysis**: Analyze error logs and system outputs
-- **Documentation Generation**: Batch generate documentation
-- **Testing Insights**: Analyze test failures
-- **Performance Analysis**: Review performance metrics
-- **Data Processing**: Transform and analyze data files
+#### CLI 的实际用例
+- **代码审查自动化**：在 CI/CD 流水线中运行代码审查
+- **日志分析**：分析错误日志和系统输出
+- **文档生成**：批量生成文档
+- **测试洞察**：分析测试失败
+- **性能分析**：审查性能指标
+- **数据处理**：转换和分析数据文件
 
-#### Next Steps
-- Read: [07-plugins/README.md](07-plugins/README.md)
-- Read: [10-cli/README.md](10-cli/README.md)
-- Create team-wide CLI shortcuts and plugins
-- Set up batch processing scripts
+#### 后续步骤
+- 阅读：[07-plugins/README.md](07-plugins/README.md)
+- 阅读：[10-cli/README.md](10-cli/README.md)
+- 创建团队级 CLI 快捷方式和插件
+- 设置批量处理脚本
 
-> **Check your understanding**: Run `/lesson-quiz plugins` or `/lesson-quiz cli` to confirm your mastery.
+> **检验你的理解**：运行 `/lesson-quiz plugins` 或 `/lesson-quiz cli` 确认你的掌握程度。
 
 ---
 
-## 🧪 Test Your Knowledge
+## 🧪 测试你的知识
 
-This repository includes two interactive skills you can use anytime in Claude Code to evaluate your understanding:
+本仓库包含两个交互式技能，你可以随时在 Claude Code 中使用来评估你的理解程度：
 
-| Skill | Command | Purpose |
-|-------|---------|---------|
-| **Self-Assessment** | `/self-assessment` | Evaluate your overall proficiency across all 10 features. Choose Quick (2 min) or Deep (5 min) mode to get a personalized skill profile and learning path. |
-| **Lesson Quiz** | `/lesson-quiz [lesson]` | Test your understanding of a specific lesson with 10 questions. Use before a lesson (pre-test), during (progress check), or after (mastery verification). |
+| 技能 | 命令 | 用途 |
+|------|------|------|
+| **自我评估** | `/self-assessment` | 评估你在所有 10 个功能方面的总体熟练程度。选择快速（2 分钟）或深度（5 分钟）模式，获取个性化技能概况和学习路径。 |
+| **课程测验** | `/lesson-quiz [lesson]` | 用 10 道题测试你对特定课程的理解。可在课前（预测试）、课中（进度检查）或课后（掌握度验证）使用。 |
 
-**Examples:**
+**示例：**
 ```
-/self-assessment                  # Find your overall level
-/lesson-quiz hooks                # Quiz on Lesson 06: Hooks
-/lesson-quiz 03                   # Quiz on Lesson 03: Skills
-/lesson-quiz advanced-features    # Quiz on Lesson 09
+/self-assessment                  # 查看你的总体级别
+/lesson-quiz hooks                # 第 06 课测验：钩子
+/lesson-quiz 03                   # 第 03 课测验：技能
+/lesson-quiz advanced-features    # 第 09 课测验
 ```
 
 ---
 
-## ⚡ Quick Start Paths
+## ⚡ 快速入门路径
 
-### If You Only Have 15 Minutes
-**Goal**: Get your first win
+### 如果你只有 15 分钟
+**目标**：获得第一次成功体验
 
-1. Copy one slash command: `cp 01-slash-commands/optimize.md .claude/commands/`
-2. Try it in Claude Code: `/optimize`
-3. Read: [01-slash-commands/README.md](01-slash-commands/README.md)
+1. 复制一个斜杠命令：`cp 01-slash-commands/optimize.md .claude/commands/`
+2. 在 Claude Code 中试用：`/optimize`
+3. 阅读：[01-slash-commands/README.md](01-slash-commands/README.md)
 
-**Outcome**: You'll have a working slash command and understand the basics
-
----
-
-### If You Have 1 Hour
-**Goal**: Set up essential productivity tools
-
-1. **Slash commands** (15 min): Copy and test `/optimize` and `/pr`
-2. **Project memory** (15 min): Create CLAUDE.md with your project standards
-3. **Install a skill** (15 min): Set up code-review skill
-4. **Try them together** (15 min): See how they work in harmony
-
-**Outcome**: Basic productivity boost with commands, memory, and auto-skills
+**成果**：你将拥有一个可用的斜杠命令并理解基本概念
 
 ---
 
-### If You Have a Weekend
-**Goal**: Become proficient with most features
+### 如果你有 1 小时
+**目标**：搭建基本生产力工具
 
-**Saturday Morning** (3 hours):
-- Complete Milestone 1A: Slash Commands + Memory
-- Complete Milestone 1B: Checkpoints + CLI Basics
+1. **斜杠命令**（15 分钟）：复制并测试 `/optimize` 和 `/pr`
+2. **项目记忆**（15 分钟）：用你的项目标准创建 CLAUDE.md
+3. **安装技能**（15 分钟）：设置代码审查技能
+4. **综合使用**（15 分钟）：看看它们如何协同工作
 
-**Saturday Afternoon** (3 hours):
-- Complete Milestone 2A: Skills + Hooks
-- Complete Milestone 2B: MCP + Subagents
-
-**Sunday** (4 hours):
-- Complete Milestone 3A: Advanced Features
-- Complete Milestone 3B: Plugins + CLI Mastery + CI/CD
-- Build a custom plugin for your team
-
-**Outcome**: You'll be a Claude Code power user ready to train others and automate complex workflows
+**成果**：通过命令、记忆和自动技能获得基本生产力提升
 
 ---
 
-## 💡 Learning Tips
+### 如果你有一个周末
+**目标**：熟练掌握大部分功能
 
-### ✅ Do
+**周六上午**（3 小时）：
+- 完成里程碑 1A：斜杠命令 + 记忆
+- 完成里程碑 1B：检查点 + CLI 基础
 
-- **Take the quiz first** to find your starting point
-- **Complete hands-on exercises** for each milestone
-- **Start simple** and add complexity gradually
-- **Test each feature** before moving to the next
-- **Take notes** on what works for your workflow
-- **Refer back** to earlier concepts as you learn advanced topics
-- **Experiment safely** using checkpoints
-- **Share knowledge** with your team
+**周六下午**（3 小时）：
+- 完成里程碑 2A：技能 + 钩子
+- 完成里程碑 2B：MCP + 子代理
 
-### ❌ Don't
+**周日**（4 小时）：
+- 完成里程碑 3A：高级功能
+- 完成里程碑 3B：插件 + CLI 精通 + CI/CD
+- 为你的团队构建一个自定义插件
 
-- **Skip the prerequisites check** when jumping to a higher level
-- **Try to learn everything at once** - it's overwhelming
-- **Copy configurations without understanding them** - you won't know how to debug
-- **Forget to test** - always verify features work
-- **Rush through milestones** - take time to understand
-- **Ignore the documentation** - each README has valuable details
-- **Work in isolation** - discuss with teammates
+**成果**：你将成为 Claude Code 高级用户，能够培训他人并自动化复杂工作流
 
 ---
 
-## 🎓 Learning Styles
+## 💡 学习建议
 
-### Visual Learners
-- Study the mermaid diagrams in each README
-- Watch the command execution flow
-- Draw your own workflow diagrams
-- Use the visual learning path above
+### ✅ 推荐做法
 
-### Hands-on Learners
-- Complete every hands-on exercise
-- Experiment with variations
-- Break things and fix them (use checkpoints!)
-- Create your own examples
+- **先做测验**找到你的起点
+- **完成每个里程碑的实践练习**
+- **从简单开始**逐步增加复杂度
+- **测试每个功能**后再进入下一个
+- **记笔记**记录适合你工作流的内容
+- **回顾**学习高级主题时参考之前的概念
+- **安全实验**使用检查点
+- **分享知识**与团队共享
 
-### Reading Learners
-- Read each README thoroughly
-- Study the code examples
-- Review the comparison tables
-- Read the blog posts linked in resources
+### ❌ 不推荐做法
 
-### Social Learners
-- Set up pair programming sessions
-- Teach concepts to teammates
-- Join Claude Code community discussions
-- Share your custom configurations
+- **跳过前置条件检查**直接进入更高级别
+- **试图一次学完所有内容** — 会让人不堪重负
+- **不理解就复制配置** — 出问题时你不知道如何调试
+- **忘记测试** — 始终验证功能是否正常工作
+- **匆忙完成里程碑** — 花时间去理解
+- **忽略文档** — 每个 README 都有宝贵的细节
+- **孤立工作** — 与队友讨论
 
 ---
 
-## 📈 Progress Tracking
+## 🎓 学习风格
 
-Use these checklists to track your progress by level. Run `/self-assessment` anytime to get an updated skill profile, or `/lesson-quiz [lesson]` after each tutorial to verify your understanding.
+### 视觉型学习者
+- 研究每个 README 中的 Mermaid 图表
+- 观察命令执行流程
+- 绘制自己的工作流图
+- 使用上方的可视化学习路径
 
-### 🟢 Level 1: Beginner
-- [ ] Completed [01-slash-commands](01-slash-commands/)
-- [ ] Completed [02-memory](02-memory/)
-- [ ] Created first custom slash command
-- [ ] Set up project memory
-- [ ] **Milestone 1A achieved**
-- [ ] Completed [08-checkpoints](08-checkpoints/)
-- [ ] Completed [10-cli](10-cli/) basics
-- [ ] Created and reverted to a checkpoint
-- [ ] Used interactive and print mode
-- [ ] **Milestone 1B achieved**
+### 实践型学习者
+- 完成每一个实践练习
+- 尝试各种变体
+- 大胆尝试并修复（使用检查点！）
+- 创建自己的示例
 
-### 🔵 Level 2: Intermediate
-- [ ] Completed [03-skills](03-skills/)
-- [ ] Completed [06-hooks](06-hooks/)
-- [ ] Installed first skill
-- [ ] Set up PreToolUse hook
-- [ ] **Milestone 2A achieved**
-- [ ] Completed [05-mcp](05-mcp/)
-- [ ] Completed [04-subagents](04-subagents/)
-- [ ] Connected GitHub MCP
-- [ ] Created custom subagent
-- [ ] Combined integrations in a workflow
-- [ ] **Milestone 2B achieved**
+### 阅读型学习者
+- 仔细阅读每个 README
+- 研究代码示例
+- 查看对比表格
+- 阅读资源中链接的博客文章
 
-### 🔴 Level 3: Advanced
-- [ ] Completed [09-advanced-features](09-advanced-features/)
-- [ ] Used planning mode successfully
-- [ ] Configured permission modes (6 modes including auto)
-- [ ] Used auto mode with safety classifier
-- [ ] Used extended thinking toggle
-- [ ] Explored Channels and Voice Dictation
-- [ ] **Milestone 3A achieved**
-- [ ] Completed [07-plugins](07-plugins/)
-- [ ] Completed [10-cli](10-cli/) advanced usage
-- [ ] Set up print mode (`claude -p`) CI/CD
-- [ ] Created JSON output for automation
-- [ ] Integrated Claude into CI/CD pipeline
-- [ ] Created team plugin
-- [ ] **Milestone 3B achieved**
+### 社交型学习者
+- 安排结对编程会议
+- 向队友讲解概念
+- 加入 Claude Code 社区讨论
+- 分享你的自定义配置
 
 ---
 
-## 🆘 Common Learning Challenges
+## 📈 进度跟踪
 
-### Challenge 1: "Too many concepts at once"
-**Solution**: Focus on one milestone at a time. Complete all exercises before moving forward.
+使用这些清单按级别跟踪你的进度。随时运行 `/self-assessment` 获取更新的技能概况，或在每个教程后运行 `/lesson-quiz [lesson]` 验证你的理解。
 
-### Challenge 2: "Don't know which feature to use when"
-**Solution**: Refer to the [Use Case Matrix](README.md#use-case-matrix) in the main README.
+### 🟢 级别 1：初学者
+- [ ] 完成 [01-slash-commands](01-slash-commands/)
+- [ ] 完成 [02-memory](02-memory/)
+- [ ] 创建了第一个自定义斜杠命令
+- [ ] 设置了项目记忆
+- [ ] **里程碑 1A 达成**
+- [ ] 完成 [08-checkpoints](08-checkpoints/)
+- [ ] 完成 [10-cli](10-cli/) 基础
+- [ ] 创建并回退到检查点
+- [ ] 使用了交互模式和打印模式
+- [ ] **里程碑 1B 达成**
 
-### Challenge 3: "Configuration not working"
-**Solution**: Check the [Troubleshooting](README.md#troubleshooting) section and verify file locations.
+### 🔵 级别 2：中级
+- [ ] 完成 [03-skills](03-skills/)
+- [ ] 完成 [06-hooks](06-hooks/)
+- [ ] 安装了第一个技能
+- [ ] 设置了 PreToolUse 钩子
+- [ ] **里程碑 2A 达成**
+- [ ] 完成 [05-mcp](05-mcp/)
+- [ ] 完成 [04-subagents](04-subagents/)
+- [ ] 连接了 GitHub MCP
+- [ ] 创建了自定义子代理
+- [ ] 在工作流中组合使用了各项集成
+- [ ] **里程碑 2B 达成**
 
-### Challenge 4: "Concepts seem to overlap"
-**Solution**: Review the [Feature Comparison](README.md#feature-comparison) table to understand differences.
-
-### Challenge 5: "Hard to remember everything"
-**Solution**: Create your own cheat sheet. Use checkpoints to experiment safely.
-
-### Challenge 6: "I'm experienced but not sure where to start"
-**Solution**: Take the [Self-Assessment Quiz](#-find-your-level) above. Skip to your level and use the prerequisites check to identify any gaps.
+### 🔴 级别 3：高级
+- [ ] 完成 [09-advanced-features](09-advanced-features/)
+- [ ] 成功使用规划模式
+- [ ] 配置了权限模式（6 种模式含自动模式）
+- [ ] 使用了带安全分类器的自动模式
+- [ ] 使用了扩展思考切换
+- [ ] 探索了频道和语音输入
+- [ ] **里程碑 3A 达成**
+- [ ] 完成 [07-plugins](07-plugins/)
+- [ ] 完成 [10-cli](10-cli/) 高级用法
+- [ ] 设置了打印模式（`claude -p`）CI/CD
+- [ ] 创建了用于自动化的 JSON 输出
+- [ ] 将 Claude 集成到 CI/CD 流水线
+- [ ] 创建了团队插件
+- [ ] **里程碑 3B 达成**
 
 ---
 
-## 🎯 What's Next After Completion?
+## 🆘 常见学习挑战
 
-Once you've completed all milestones:
+### 挑战 1："概念太多，一次记不住"
+**解决方案**：一次专注一个里程碑。完成所有练习后再继续前进。
 
-1. **Create team documentation** - Document your team's Claude Code setup
-2. **Build custom plugins** - Package your team's workflows
-3. **Explore Remote Control** - Control Claude Code sessions programmatically from external tools
-4. **Try Web Sessions** - Use Claude Code through browser-based interfaces for remote development
-5. **Use the Desktop App** - Access Claude Code features through the native desktop application
-6. **Use Auto Mode** - Let Claude work autonomously with a background safety classifier
-7. **Leverage Auto Memory** - Let Claude learn your preferences automatically over time
-8. **Set up Agent Teams** - Coordinate multiple agents on complex, multi-faceted tasks
-9. **Use Channels** - Organize work across structured multi-session workflows
-10. **Try Voice Dictation** - Use hands-free voice input for interaction with Claude Code
-11. **Use Scheduled Tasks** - Automate recurring checks with `/loop` and cron tools
-12. **Contribute examples** - Share with the community
-13. **Mentor others** - Help teammates learn
-14. **Optimize workflows** - Continuously improve based on usage
-15. **Stay updated** - Follow Claude Code releases and new features
+### 挑战 2："不知道何时使用哪个功能"
+**解决方案**：参考主 README 中的[用例矩阵](README.md#use-case-matrix)。
+
+### 挑战 3："配置不起作用"
+**解决方案**：查看[故障排除](README.md#troubleshooting)章节并验证文件位置。
+
+### 挑战 4："概念似乎有重叠"
+**解决方案**：查看[功能对比](README.md#feature-comparison)表格以理解区别。
+
+### 挑战 5："很难记住所有内容"
+**解决方案**：创建自己的速查表。使用检查点安全实验。
+
+### 挑战 6："我有经验但不确定从哪里开始"
+**解决方案**：做上方的[自我评估测验](#-找到你的级别)。跳到你的级别，使用前置条件检查找出差距。
 
 ---
 
-## 📚 Additional Resources
+## 🎯 完成所有内容后的下一步
 
-### Official Documentation
-- [Claude Code Documentation](https://code.claude.com/docs/en/overview)
-- [Anthropic Documentation](https://docs.anthropic.com)
-- [MCP Protocol Specification](https://modelcontextprotocol.io)
+完成所有里程碑后：
 
-### Blog Posts
-- [Discovering Claude Code Slash Commands](https://medium.com/@luongnv89/discovering-claude-code-slash-commands-cdc17f0dfb29)
+1. **创建团队文档** — 记录团队的 Claude Code 配置
+2. **构建自定义插件** — 将团队工作流打包
+3. **探索远程控制** — 从外部工具以编程方式控制 Claude Code 会话
+4. **尝试 Web 会话** — 通过浏览器界面使用 Claude Code 进行远程开发
+5. **使用桌面应用** — 通过原生桌面应用访问 Claude Code 功能
+6. **使用自动模式** — 让 Claude 在后台安全分类器的保护下自主工作
+7. **利用自动记忆** — 让 Claude 自动学习你的偏好
+8. **设置代理团队** — 协调多个代理处理复杂的多方面任务
+9. **使用频道** — 跨结构化多会话工作流组织工作
+10. **尝试语音输入** — 使用免手操作的语音与 Claude Code 交互
+11. **使用定时任务** — 通过 `/loop` 和 cron 工具自动化循环检查
+12. **贡献示例** — 与社区分享
+13. **指导他人** — 帮助队友学习
+14. **优化工作流** — 根据使用情况持续改进
+15. **保持更新** — 关注 Claude Code 的发布和新功能
 
-### Community
+---
+
+## 📚 附加资源
+
+### 官方文档
+- [Claude Code 文档](https://code.claude.com/docs/en/overview)
+- [Anthropic 文档](https://docs.anthropic.com)
+- [MCP 协议规范](https://modelcontextprotocol.io)
+
+### 博客文章
+- [探索 Claude Code 斜杠命令](https://medium.com/@luongnv89/discovering-claude-code-slash-commands-cdc17f0dfb29)
+
+### 社区
 - [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)
-- [MCP Servers Repository](https://github.com/modelcontextprotocol/servers)
+- [MCP 服务器仓库](https://github.com/modelcontextprotocol/servers)
 
 ---
 
-## 💬 Feedback & Support
+## 💬 反馈与支持
 
-- **Found an issue?** Create an issue in the repository
-- **Have a suggestion?** Submit a pull request
-- **Need help?** Check the documentation or ask the community
-
----
-
-**Last Updated**: March 2026
-**Maintained by**: Claude How-To Contributors
-**License**: Educational purposes, free to use and adapt
+- **发现问题？** 在仓库中创建 Issue
+- **有建议？** 提交 Pull Request
+- **需要帮助？** 查看文档或向社区提问
 
 ---
 
-[← Back to Main README](README.md)
+**最后更新**：2026 年 3 月
+**维护者**：Claude How-To 贡献者
+**许可证**：教育用途，免费使用和改编
+
+---
+
+[← 返回主 README](README.md)

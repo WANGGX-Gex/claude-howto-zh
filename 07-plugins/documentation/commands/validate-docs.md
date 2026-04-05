@@ -3,12 +3,12 @@ name: Validate Documentation
 description: Validate documentation for completeness and accuracy
 ---
 
-# Documentation Validation
+# 文档验证
 
-Validate documentation quality:
+验证文档质量：
 
-1. Check for broken links
-2. Verify code examples
-3. Ensure completeness
-4. Check formatting
-5. Validate against actual code
+1. 检查失效链接
+2. 验证代码示例
+3. 确保完整性
+4. 检查格式
+5. 与实际代码进行比对验证

@@ -1,69 +1,69 @@
-# Lesson Quiz
+# 课程测验
 
-> Interactive quiz that tests your understanding of a specific Claude Code lesson with 10 questions, per-question feedback, and targeted review guidance.
+> 交互式测验，测试你对特定 Claude Code 课程的理解，包含 10 道题目、逐题反馈和针对性复习指导。
 
-## Highlights
+## 特色
 
-- 10 questions per lesson mixing conceptual understanding and practical application
-- Covers all 10 lessons (01-Slash Commands through 10-CLI)
-- Three timing modes: pre-test, progress check, or mastery verification
-- Per-question feedback with correct answers and explanations
-- Targeted review recommendations pointing to specific lesson sections
-- 100-question bank across all lessons in `references/question-bank.md`
+- 每课 10 道题目，混合概念理解和实际应用
+- 覆盖全部 10 节课（01-斜杠命令（Slash Command）到 10-命令行界面（CLI））
+- 三种计时模式：预测试、进度检查或掌握验证
+- 逐题反馈，提供正确答案和解释
+- 针对性复习建议，指向课程的具体章节
+- 所有课程共 100 道题库，位于 `references/question-bank.md`
 
-## When to Use
+## 使用时机
 
-| Say this... | Skill will... |
+| 你可以这样说... | 技能（Skill）会... |
 |---|---|
-| "quiz me on hooks" | Run a 10-question quiz on Lesson 06: Hooks |
-| "lesson quiz 03" | Test your knowledge of Lesson 03: Skills |
-| "do I understand MCP" | Assess your understanding of Lesson 05: MCP |
-| "practice quiz" | Let you pick a lesson, then quiz you |
+| "quiz me on hooks" | 运行关于第 06 课：钩子（Hook）的 10 道题测验 |
+| "lesson quiz 03" | 测试你对第 03 课：技能（Skill）的知识 |
+| "do I understand MCP" | 评估你对第 05 课：模型上下文协议（MCP）的理解 |
+| "practice quiz" | 让你选择一节课，然后进行测验 |
 
-## How It Works
+## 工作原理
 
 ```mermaid
 graph TD
-    A["Select lesson"] --> B["Choose timing: pre/during/after"]
-    B --> C["Answer 10 questions in 5 rounds"]
-    C --> D["Score and review feedback"]
+    A["选择课程"] --> B["选择时机：学前/学中/学后"]
+    B --> C["分 5 轮回答 10 道题"]
+    C --> D["评分和复习反馈"]
     style A fill:#4CAF50,color:#fff
     style D fill:#2196F3,color:#fff
 ```
 
-## Usage
+## 用法
 
 ```
-/lesson-quiz [lesson-name-or-number]
+/lesson-quiz [课程名称或编号]
 ```
 
-Examples:
+示例：
 ```
 /lesson-quiz hooks
 /lesson-quiz 03
 /lesson-quiz advanced-features
-/lesson-quiz           # (prompts for lesson selection)
+/lesson-quiz           # （提示选择课程）
 ```
 
-## Output
+## 输出
 
-### Score Report
-- Total score out of 10 with grade (Mastered / Proficient / Developing / Beginning)
-- Breakdown by question category (conceptual vs. practical)
+### 成绩报告
+- 总分（满分 10 分）和等级（已掌握 / 熟练 / 进步中 / 入门）
+- 按题目类别分类（概念题 vs 实践题）
 
-### Per-Question Feedback
-For each incorrect answer:
-- What you answered vs. the correct answer
-- Explanation of why the correct answer is right
-- Specific section of the lesson to review
+### 逐题反馈
+对于每道错题：
+- 你的答案 vs 正确答案
+- 正确答案的解释
+- 需要复习的具体课程章节
 
-### Timing-Aware Guidance
-- **Pre-test**: Establishes baseline, highlights areas to focus on while studying
-- **During**: Identifies what you've grasped and what to revisit
-- **After**: Confirms mastery or pinpoints remaining gaps
+### 时机感知指导
+- **预测试**：建立基准，标出学习时需要重点关注的领域
+- **学中**：识别你已掌握的内容和需要回顾的部分
+- **学后**：确认掌握程度或指出剩余知识缺口
 
-## Resources
+## 资源
 
-| Path | Description |
+| 路径 | 描述 |
 |---|---|
-| `references/question-bank.md` | 100 pre-written questions (10 per lesson) with answers, explanations, and review pointers |
+| `references/question-bank.md` | 100 道预设题目（每课 10 道），含答案、解释和复习指引 |

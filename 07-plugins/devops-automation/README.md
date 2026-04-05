@@ -3,105 +3,105 @@
   <img alt="Claude How To" src="../../resources/logos/claude-howto-logo.svg">
 </picture>
 
-# DevOps Automation Plugin
+# DevOps 自动化插件
 
-Complete DevOps automation for deployment, monitoring, and incident response.
+完整的 DevOps 自动化方案，涵盖部署、监控和事件响应。
 
-## Features
+## 功能特性
 
-✅ Automated deployments
-✅ Rollback procedures
-✅ System health monitoring
-✅ Incident response workflows
-✅ Kubernetes integration
+✅ 自动化部署
+✅ 回滚流程
+✅ 系统健康监控
+✅ 事件响应工作流
+✅ Kubernetes 集成
 
-## Installation
+## 安装
 
 ```bash
 /plugin install devops-automation
 ```
 
-## What's Included
+## 包含内容
 
-### Slash Commands
-- `/deploy` - Deploy to production or staging
-- `/rollback` - Rollback to previous version
-- `/status` - Check system health
-- `/incident` - Handle production incidents
+### 斜杠命令（Slash Command）
+- `/deploy` - 部署到生产环境或预发布环境
+- `/rollback` - 回滚到上一个版本
+- `/status` - 检查系统健康状态
+- `/incident` - 处理生产环境事件
 
-### Subagents
-- `deployment-specialist` - Deployment operations
-- `incident-commander` - Incident coordination
-- `alert-analyzer` - System health analysis
+### 子代理（Subagent）
+- `deployment-specialist` - 部署运维
+- `incident-commander` - 事件协调
+- `alert-analyzer` - 系统健康分析
 
-### MCP Servers
-- Kubernetes integration
+### MCP 服务器
+- Kubernetes 集成
 
-### Scripts
-- `deploy.sh` - Deployment automation
-- `rollback.sh` - Rollback automation
-- `health-check.sh` - Health check utilities
+### 脚本
+- `deploy.sh` - 部署自动化
+- `rollback.sh` - 回滚自动化
+- `health-check.sh` - 健康检查工具
 
-### Hooks
-- `pre-deploy.js` - Pre-deployment validation
-- `post-deploy.js` - Post-deployment tasks
+### 钩子（Hook）
+- `pre-deploy.js` - 部署前验证
+- `post-deploy.js` - 部署后任务
 
-## Usage
+## 使用方法
 
-### Deploy to Staging
+### 部署到预发布环境
 ```
 /deploy staging
 ```
 
-### Deploy to Production
+### 部署到生产环境
 ```
 /deploy production
 ```
 
-### Rollback
+### 回滚
 ```
 /rollback production
 ```
 
-### Check Status
+### 检查状态
 ```
 /status
 ```
 
-### Handle Incident
+### 处理事件
 ```
 /incident
 ```
 
-## Requirements
+## 前置要求
 
 - Claude Code 1.0+
 - Kubernetes CLI (kubectl)
-- Cluster access configured
+- 已配置集群访问权限
 
-## Configuration
+## 配置
 
-Set up your Kubernetes config:
+设置 Kubernetes 配置：
 ```bash
 export KUBECONFIG=~/.kube/config
 ```
 
-## Example Workflow
+## 示例工作流
 
 ```
-User: /deploy production
+用户：/deploy production
 
-Claude:
-1. Runs pre-deploy hook (validates kubectl, cluster connection)
-2. Delegates to deployment-specialist subagent
-3. Runs deploy.sh script
-4. Monitors deployment progress via Kubernetes MCP
-5. Runs post-deploy hook (waits for pods, smoke tests)
-6. Provides deployment summary
+Claude：
+1. 运行部署前钩子（验证 kubectl、集群连接）
+2. 委派给 deployment-specialist 子代理
+3. 运行 deploy.sh 脚本
+4. 通过 Kubernetes MCP 监控部署进度
+5. 运行部署后钩子（等待 Pod 就绪、冒烟测试）
+6. 提供部署摘要
 
-Result:
-✅ Deployment complete
-📦 Version: v2.1.0
-🚀 Pods: 3/3 ready
-⏱️  Time: 2m 34s
+结果：
+✅ 部署完成
+📦 版本：v2.1.0
+🚀 Pod：3/3 就绪
+⏱️  耗时：2 分 34 秒
 ```

@@ -1,13 +1,13 @@
-# Brand Voice Tone Examples
+# 品牌语音语气示例
 
-## Exciting Announcement
-"Save 8 hours per week on code reviews. Claude reviews your PRs automatically."
+## 激动人心的公告
+"每周在代码审查上节省 8 小时。Claude 自动审查你的 PR。"
 
-## Empathetic Support
-"We know deployments can be stressful. Claude handles testing so you don't have to worry."
+## 有同理心的支持
+"我们知道部署可能令人紧张。Claude 帮你处理测试，让你不必担心。"
 
-## Confident Product Feature
-"Claude doesn't just suggest code. It understands your architecture and maintains consistency."
+## 自信的产品特性
+"Claude 不只是建议代码。它理解你的架构并保持一致性。"
 
-## Educational Blog Post
-"Let's explore how agents improve code review workflows. Here's what we learned..."
+## 教育性博客文章
+"让我们来探讨代理如何改善代码审查工作流。以下是我们的发现..."
