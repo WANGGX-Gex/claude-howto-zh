@@ -337,7 +337,7 @@ ls .claude/commands/
 ```markdown
 [斜杠命令](01-slash-commands/)
 [技能指南](03-skills/)
-[记忆架构](02-memory/#memory-architecture)
+[记忆架构](02-memory/#记忆架构)
 ```
 
 从课程文件夹返回根目录或兄弟目录：

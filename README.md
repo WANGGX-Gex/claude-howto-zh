@@ -86,7 +86,7 @@
 
 ### 1. 找到你的水平
 
-参加[自我评估测验](LEARNING-ROADMAP.md#-find-your-level)或在 Claude Code 中运行 `/self-assessment`。根据你已掌握的知识获取个性化路线图。
+参加[自我评估测验](LEARNING-ROADMAP.md#-找到你的级别)或在 Claude Code 中运行 `/self-assessment`。根据你已掌握的知识获取个性化路线图。
 
 ### 2. 跟随引导路径
 
