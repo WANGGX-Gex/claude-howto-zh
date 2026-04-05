@@ -552,89 +552,89 @@ Claude 将从指定的额外目录加载 CLAUDE.md，与当前工作目录的记
 ## Project Overview
 - **Name**: E-commerce Platform
 - **Tech Stack**: Node.js, PostgreSQL, React 18, Docker
-- **Team Size**: 5 developers
-- **Deadline**: Q4 2025
+- **团队规模**：5 名开发者
+- **截止日期**：2025 Q4
 
-## Architecture
+## 架构
 @docs/architecture.md
 @docs/api-standards.md
 @docs/database-schema.md
 
-## Development Standards
+## 开发标准
 
-### Code Style
-- Use Prettier for formatting
-- Use ESLint with airbnb config
-- Maximum line length: 100 characters
-- Use 2-space indentation
+### 代码风格
+- 使用 Prettier 进行格式化
+- 使用 ESLint airbnb 配置
+- 最大行长度：100 字符
+- 使用 2 空格缩进
 
-### Naming Conventions
-- **Files**: kebab-case (user-controller.js)
-- **Classes**: PascalCase (UserService)
-- **Functions/Variables**: camelCase (getUserById)
-- **Constants**: UPPER_SNAKE_CASE (API_BASE_URL)
-- **Database Tables**: snake_case (user_accounts)
+### 命名规范
+- **文件**：kebab-case（user-controller.js）
+- **类**：PascalCase（UserService）
+- **函数/变量**：camelCase（getUserById）
+- **常量**：UPPER_SNAKE_CASE（API_BASE_URL）
+- **数据库表**：snake_case（user_accounts）
 
-### Git Workflow
-- Branch names: `feature/description` or `fix/description`
-- Commit messages: Follow conventional commits
-- PR required before merge
-- All CI/CD checks must pass
-- Minimum 1 approval required
+### Git 工作流
+- 分支名称：`feature/description` 或 `fix/description`
+- 提交信息：遵循 conventional commits 规范
+- 合并前需要 PR
+- 所有 CI/CD 检查必须通过
+- 至少 1 人审批
 
-### Testing Requirements
-- Minimum 80% code coverage
-- All critical paths must have tests
-- Use Jest for unit tests
-- Use Cypress for E2E tests
-- Test filenames: `*.test.ts` or `*.spec.ts`
+### 测试要求
+- 最低 80% 代码覆盖率
+- 所有关键路径必须有测试
+- 使用 Jest 进行单元测试
+- 使用 Cypress 进行端到端测试
+- 测试文件名：`*.test.ts` 或 `*.spec.ts`
 
-### API Standards
-- RESTful endpoints only
-- JSON request/response
-- Use HTTP status codes correctly
-- Version API endpoints: `/api/v1/`
-- Document all endpoints with examples
+### API 标准
+- 仅使用 RESTful 端点
+- JSON 请求/响应
+- 正确使用 HTTP 状态码
+- API 端点版本化：`/api/v1/`
+- 所有端点需附带示例文档
 
-### Database
-- Use migrations for schema changes
-- Never hardcode credentials
-- Use connection pooling
-- Enable query logging in development
-- Regular backups required
+### 数据库
+- 使用迁移（migration）进行架构变更
+- 禁止硬编码凭证
+- 使用连接池
+- 开发环境启用查询日志
+- 定期备份
 
-### Deployment
-- Docker-based deployment
-- Kubernetes orchestration
-- Blue-green deployment strategy
-- Automatic rollback on failure
-- Database migrations run before deploy
+### 部署
+- 基于 Docker 的部署
+- Kubernetes 编排
+- 蓝绿部署策略
+- 失败时自动回滚
+- 部署前运行数据库迁移
 
-## Common Commands
+## 常用命令
 
-| Command | Purpose |
-|---------|---------|
-| `npm run dev` | Start development server |
-| `npm test` | Run test suite |
-| `npm run lint` | Check code style |
-| `npm run build` | Build for production |
-| `npm run migrate` | Run database migrations |
+| 命令 | 用途 |
+|------|------|
+| `npm run dev` | 启动开发服务器 |
+| `npm test` | 运行测试套件 |
+| `npm run lint` | 检查代码风格 |
+| `npm run build` | 生产构建 |
+| `npm run migrate` | 运行数据库迁移 |
 
-## Team Contacts
-- Tech Lead: Sarah Chen (@sarah.chen)
-- Product Manager: Mike Johnson (@mike.j)
-- DevOps: Alex Kim (@alex.k)
+## 团队联系方式
+- 技术负责人：Sarah Chen (@sarah.chen)
+- 产品经理：Mike Johnson (@mike.j)
+- DevOps：Alex Kim (@alex.k)
 
-## Known Issues & Workarounds
-- PostgreSQL connection pooling limited to 20 during peak hours
-- Workaround: Implement query queuing
-- Safari 14 compatibility issues with async generators
-- Workaround: Use Babel transpiler
+## 已知问题与解决方案
+- PostgreSQL 连接池在高峰期限制为 20
+- 解决方案：实现查询队列
+- Safari 14 异步生成器兼容性问题
+- 解决方案：使用 Babel 转译器
 
-## Related Projects
-- Analytics Dashboard: `/projects/analytics`
-- Mobile App: `/projects/mobile`
-- Admin Panel: `/projects/admin`
+## 相关项目
+- 分析仪表盘：`/projects/analytics`
+- 移动应用：`/projects/mobile`
+- 管理面板：`/projects/admin`
 ```
 
 ### 示例 2：目录特定记忆
@@ -642,27 +642,27 @@ Claude 将从指定的额外目录加载 CLAUDE.md，与当前工作目录的记
 **文件：** `./src/api/CLAUDE.md`
 
 ```markdown
-# API Module Standards
+# API 模块标准
 
-This file overrides root CLAUDE.md for everything in /src/api/
+此文件覆盖根目录 CLAUDE.md，适用于 /src/api/ 中的所有内容
 
-## API-Specific Standards
+## API 特定标准
 
-### Request Validation
-- Use Zod for schema validation
-- Always validate input
-- Return 400 with validation errors
-- Include field-level error details
+### 请求验证
+- 使用 Zod 进行模式验证
+- 始终验证输入
+- 验证错误时返回 400
+- 包含字段级错误详情
 
-### Authentication
-- All endpoints require JWT token
-- Token in Authorization header
-- Token expires after 24 hours
-- Implement refresh token mechanism
+### 身份验证
+- 所有端点需要 JWT 令牌
+- 令牌放在 Authorization 头中
+- 令牌 24 小时后过期
+- 实现令牌刷新机制
 
-### Response Format
+### 响应格式
 
-All responses must follow this structure:
+所有响应必须遵循以下结构：
 
 ```json
 {
@@ -673,7 +673,7 @@ All responses must follow this structure:
 }
 ```
 
-Error responses:
+错误响应：
 ```json
 {
   "success": false,
@@ -686,23 +686,23 @@ Error responses:
 }
 ```
 
-### Pagination
-- Use cursor-based pagination (not offset)
-- Include `hasMore` boolean
-- Limit max page size to 100
-- Default page size: 20
+### 分页
+- 使用游标分页（不使用偏移量）
+- 包含 `hasMore` 布尔值
+- 最大页面大小限制为 100
+- 默认页面大小：20
 
-### Rate Limiting
-- 1000 requests per hour for authenticated users
-- 100 requests per hour for public endpoints
-- Return 429 when exceeded
-- Include retry-after header
+### 速率限制
+- 认证用户每小时 1000 个请求
+- 公共端点每小时 100 个请求
+- 超出时返回 429
+- 包含 retry-after 头
 
-### Caching
-- Use Redis for session caching
-- Cache duration: 5 minutes default
-- Invalidate on write operations
-- Tag cache keys with resource type
+### 缓存
+- 使用 Redis 进行会话缓存
+- 缓存时间：默认 5 分钟
+- 写操作时失效
+- 使用资源类型标记缓存键
 ```
 
 ### 示例 3：个人记忆
@@ -710,48 +710,48 @@ Error responses:
 **文件：** `~/.claude/CLAUDE.md`
 
 ```markdown
-# My Development Preferences
+# 我的开发偏好
 
-## About Me
-- **Experience Level**: 8 years full-stack development
-- **Preferred Languages**: TypeScript, Python
-- **Communication Style**: Direct, with examples
-- **Learning Style**: Visual diagrams with code
+## 关于我
+- **经验水平**：8 年全栈开发经验
+- **偏好语言**：TypeScript、Python
+- **沟通风格**：直接，配合示例
+- **学习风格**：可视化图表配合代码
 
-## Code Preferences
+## 代码偏好
 
-### Error Handling
-I prefer explicit error handling with try-catch blocks and meaningful error messages.
-Avoid generic errors. Always log errors for debugging.
+### 错误处理
+我偏好使用 try-catch 块和有意义的错误消息进行显式错误处理。
+避免泛型错误。始终记录错误日志以便调试。
 
-### Comments
-Use comments for WHY, not WHAT. Code should be self-documenting.
-Comments should explain business logic or non-obvious decisions.
+### 注释
+注释用于解释「为什么」，而非「是什么」。代码应当自解释。
+注释应解释业务逻辑或非显而易见的决策。
 
-### Testing
-I prefer TDD (test-driven development).
-Write tests first, then implementation.
-Focus on behavior, not implementation details.
+### 测试
+我偏好 TDD（测试驱动开发）。
+先写测试，再写实现。
+关注行为，而非实现细节。
 
-### Architecture
-I prefer modular, loosely-coupled design.
-Use dependency injection for testability.
-Separate concerns (Controllers, Services, Repositories).
+### 架构
+我偏好模块化、松耦合的设计。
+使用依赖注入提高可测试性。
+分离关注点（Controllers、Services、Repositories）。
 
-## Debugging Preferences
-- Use console.log with prefix: `[DEBUG]`
-- Include context: function name, relevant variables
-- Use stack traces when available
-- Always include timestamps in logs
+## 调试偏好
+- 使用 console.log 并添加前缀：`[DEBUG]`
+- 包含上下文：函数名、相关变量
+- 尽可能使用堆栈跟踪
+- 日志中始终包含时间戳
 
-## Communication
-- Explain complex concepts with diagrams
-- Show concrete examples before explaining theory
-- Include before/after code snippets
-- Summarize key points at the end
+## 沟通方式
+- 使用图表解释复杂概念
+- 先展示具体示例，再解释理论
+- 包含修改前/修改后的代码对比
+- 在最后总结要点
 
-## Project Organization
-I organize my projects as:
+## 项目组织
+我的项目组织方式：
 
    project/
    ├── src/
@@ -763,12 +763,12 @@ I organize my projects as:
    ├── docs/
    └── docker/
 
-## Tooling
-- **IDE**: VS Code with vim keybindings
-- **Terminal**: Zsh with Oh-My-Zsh
-- **Format**: Prettier (100 char line length)
-- **Linter**: ESLint with airbnb config
-- **Test Framework**: Jest with React Testing Library
+## 工具链
+- **IDE**：VS Code（vim 键绑定）
+- **终端**：Zsh + Oh-My-Zsh
+- **格式化**：Prettier（100 字符行宽）
+- **Linter**：ESLint airbnb 配置
+- **测试框架**：Jest + React Testing Library
 ```
 
 _我的测试_
